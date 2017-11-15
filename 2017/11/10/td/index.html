@@ -310,7 +310,8 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/11/10/td/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/10/td/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/11/10/td/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -411,10 +412,12 @@ var jiathis_config={
 
   
     <div class="comments" id="comments">
-      
-        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
-        <div id="gitment-container" style="display:none"></div>
-      
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
 
   
@@ -681,6 +684,26 @@ var jiathis_config={
 
   
 
+    
+      <script id="dsq-count-scr" src="https://lilyhuli.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'lilyhuli.github.io/2017/11/10/td/';
+          this.page.identifier = '2017/11/10/td/';
+          this.page.title = 'td';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lilyhuli.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -693,10 +716,6 @@ var jiathis_config={
   
 
 
-
-
-
-  
 
 
 
