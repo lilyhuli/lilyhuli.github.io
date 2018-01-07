@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>TangDon&#39;s Blog</title>
   
-  <subtitle>a Developer</subtitle>
+  <subtitle>单口喜剧是一种人格紊乱，而我们以此为生。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="lilyhuli.github.io/"/>
@@ -10,7 +10,7 @@
   <id>lilyhuli.github.io/</id>
   
   <author>
-    <name>TangDong</name>
+    <name>TangDon</name>
     
   </author>
   
