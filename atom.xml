@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="lilyhuli.github.io/"/>
-  <updated>2019-01-13T16:17:38.270Z</updated>
+  <updated>2019-01-13T16:44:31.591Z</updated>
   <id>lilyhuli.github.io/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring Security </title>
+    <link href="lilyhuli.github.io/2019/01/14/Spring-Security/"/>
+    <id>lilyhuli.github.io/2019/01/14/Spring-Security/</id>
+    <published>2019-01-13T16:34:56.000Z</published>
+    <updated>2019-01-13T16:44:31.591Z</updated>
+    
+    <content type="html"><![CDATA[<p>   趁着周末闲来无事学习了一下Spring Security，源码在 <a href=""></a>lilyhuli/spring_security_exam</p><p>   用到的技术：<br>   java<br>   springboot<br>   mybatis<br>   mysql<br>   后端框架thymeleaf</p><p>需求如下：<br>Security中可以在内存中建立用户，留后门设置后门账号，以及数据库的结合访问。<br>和shiro一样 不同用户拥有不同权限，访问不同网页。<br>如果用户未登录，则返回首页，如果用户已登录，但是没有权限则返回json，告知。</p><pre><code>网上的看了很多文章，Spring Security内置了三个基于投票，AccessDecisionManager实现类，它们分别是AffirmativeBased、ConsensusBased 和UnanimousBased。我觉得继承AccessDecisionManager，然后重写decide方法就可以。当然Spring Security的代码需要一点点debug才能了解其原理。搞完又过0点了，洗洗睡了，梦里啥都有。</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;   趁着周末闲来无事学习了一下Spring Security，源码在 &lt;a href=&quot;&quot;&gt;&lt;/a&gt;lilyhuli/spring_security_exam&lt;/p&gt;
+&lt;p&gt;   用到的技术：&lt;br&gt;   java&lt;br&gt;   springboot&lt;br&gt;   mybat
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>又是一年末尾</title>
+    <link href="lilyhuli.github.io/2018/12/25/%E5%8F%88%E6%98%AF%E4%B8%80%E5%B9%B4%E6%9C%AB%E5%B0%BE/"/>
+    <id>lilyhuli.github.io/2018/12/25/又是一年末尾/</id>
+    <published>2018-12-24T16:31:00.000Z</published>
+    <updated>2019-01-13T16:33:42.291Z</updated>
+    
+    <content type="html"><![CDATA[<p>这一年不仅没有完成爸妈所说的人生大事，还把工作搞得一团糟。读了几本书，看了几部剧，就想把感想和经历写下来，毕竟好多年都没写总结了。</p><p>  1，《简爱》 </p><pre><code>长大了再读《简爱》真觉得简爱是一个自怨自艾的玛丽苏，根本没有灰姑娘的容颜，也没有纯洁谦卑，外柔内刚的品质，有的只是孤傲清高，目中无人，乖戾而非可爱，敏感且自卑，自我为中心，童年的经历给了她太多不幸，当然也影响了她的决定，她本不该，出身无法决定，但能决定的一定要好好把握；而《呼啸山庄》那种坏就是要坏的彻底，悲剧就是要绑架你；</code></pre><p>  2，《东京女子图鉴》</p><pre><code>绫在干什么？同作为一个京漂，绫这么富有野心，怎么可能找到和她一样的人呢，她看不起自己的阶层，厌恶自己的出身，她并不喜欢自己，努力去除自己身上的土气，那个面对阶级凝固努力想要嫁入上层阶级的绫，真当有平配自己的伴侣在一起时，要么嫌过于平凡，要么觉得对方野心太重，要么觉得对方无聊，最后都不欢而散，她只喜欢自己高攀不起的港区男，同样港区男是不会选择她的。成熟后的人多可怕，没有感情波动，和《黑镜》里玩大数据匹配伴侣的那集很像，不过黑镜的结局都要好过图鉴了，大多数东京人在工作中挣扎着对感情的投入太有限了。不过这样才显得更真实，毕竟电视剧和小说放大了感情，让你觉得它很重要；作为职业白领，绫的结婚只是她的一个目标，日本压抑的社会关系真让人喘不过气，偶像剧是泛娱乐时代的毒品，从早到晚谈恋爱，贫女出门遇见高富帅。</code></pre><p>3， 极简生活</p><pre><code>加入极简生活小组之后，发现大多数人的极简主义就是扔扔扔，这是一种的变相的消费升级，不是极简主义。对于像我这么穷的人来说，极简主义是断舍离，减物欲。购买物品所带来的快感实在太短了，在精美的包装下它让人非常期待，一旦拆开，我就要担心它会不会又磕伤划痕，变旧过时，这样所带来的只能是重蹈覆辙，不断陷入消费主义的陷阱里，不能自拔，这就非常恐怖了；我不是一个批判家，也没有资格判断，社会的标尺太沉重，对错正邪都只是前人框定好的，没有机会去定义，没有勇气去改变，更不是为了安利极简主义的生活方式，生活方式是自己决定的，根本没有对错，只要能让自己内心充盈，关注更重要的事，不必为了琐碎浪费时间。</code></pre><p>4， 情感</p><pre><code>在我看来，爱情在只不过是一小段插曲，是日常生活中诸多事务中的一件小事，这些都是从我的斗争经历里得出的。喜欢你的人会把你的沉默寡言看成斯文乖巧，莽撞冒失也可以是可爱娇痴，甚至脾气暴躁都可以是豁达爽朗；不喜欢你的人则把关心当做打扰，沉默当成冷落，你精心准备的心思会被当做神经质。所以形容词最不靠谱，舔狗也不得house。就没有那种成熟平等的恋爱么，再炙热也不过火，再沉默也不觉得是冷漠。恐惧不期而遇的爱蔓延，那种没有回应的尴尬和苦涩。毛姆不就说： “女人可以原谅男人伤害他，但绝不能原谅男人为她做出牺牲” ，毛姆是一个仇女的人，但他这句话说的很对。《一千零一夜》里的王后会沉迷每天对她暴虐的人，但是却对爱她的国王熟视无睹；所以不要对一个不爱你的人好，只会让自己显得更廉价。</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这一年不仅没有完成爸妈所说的人生大事，还把工作搞得一团糟。读了几本书，看了几部剧，就想把感想和经历写下来，毕竟好多年都没写总结了。&lt;/p&gt;
+&lt;p&gt;  1，《简爱》 &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;长大了再读《简爱》真觉得简爱是一个自怨自艾的玛丽苏，根本没有灰姑娘的容颜，也没
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>RabbitMQ 相关</title>
+    <link href="lilyhuli.github.io/2018/05/14/RabbitMQ-%E7%9B%B8%E5%85%B3-2/"/>
+    <id>lilyhuli.github.io/2018/05/14/RabbitMQ-相关-2/</id>
+    <published>2018-05-13T16:28:00.000Z</published>
+    <updated>2019-01-13T16:29:50.559Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要： 使用RabbitMQ的消息队列，可以有效提高系统的峰值处理能力。</p><p>RabbitMQ是消息代理(Message Broker)，它支持多种异步消息处理方式，最常见的有：</p><p>Work Queue：将消息缓存到一个队列，默认情况下，多个worker按照Round Robin的方式处理队列中的消息。每个消息只会分配给单个worker。</p><p>Publish/Subscribe：每个订阅消息的消费者都会收到消息，因此每个消息通常会分配给多个worker，每个worker对消息进行不同的处理。</p><p>RabbitMQ还支持Routing、Topics、以及Remote procedure calls (RPC)等方式。</p><p>对于不同的消息处理方式，有一点是相同的，RabbitMQ是介于消息的生产者和消费者的中间节点，负责缓存和分发消息。RabbitMQ接收来自生产者的消息，缓存到内存中，按照不同的方式分发给消费者。RabbitMQ还可以将消息写入磁盘，保证持久化，这样即使RabbitMQ意外崩溃了，消息数据不至于完全丢失。</p><p>为什么使用RabbitMQ？</p><p>最简单的一点在于，它支持Work Queue等不同的消息处理方式，可以用于不同的业务场景。RabbitMQ的Work Queue，即消息队列。</p><p>使用消息队列，可以将不算紧急、但是非常消耗资源的计算任务，以消息的方式插入到RabbitMQ的队列中，然后使用多个处理模块处理这些消息。</p><p>这样做最大的好处在于：提高了系统峰值处理能力。因为，来不及处理的消息缓存在RabbitMQ中，避免了同时进行大量计算导致系统因超负荷运行而崩溃。而那些来不及处理的消息，会在峰值过去之后慢慢处理掉。</p><p>另一个好处在于解耦。消息的生产者只需要将消息发送给RabbitMQ，这些消息什么时候处理完，不会影响生产者的响应性能。</p><p>安装并运行RabbitMQ</p><p>使用Docker运行RabbitMQ非常简单，只需要执行一条简单的命令：</p><p>sudo docker run -d –name rabbitmq -h rabbitmq -p 5672:5672 -v /var/lib/rabbitmq:/var/lib/rabbitmq registry.docker-cn.com/library/rabbitmq:3.7</p><p>-d : 后台运行容器</p><p>–name rabbitmq : 将容器的名字设为rabbitmq</p><p>-h rabbitmq : 将容器的主机名设为rabbitmq，希望RabbitMQ消息数据持久化保存到本地磁盘是需要设置主机名，因为RabbitMQ保存数据的目录为主机名</p><p>-p 5672:5672 : 将容器的5672端口映射为本地主机的5672端口，这样可以通过本地的5672端口访问rabbitmq</p><p>-v /var/lib/rabbitmq:/var/lib/rabbitmq：将容器的/var/lib/rabbitmq目录映射为本地主机的/var/lib/rabbitmq目录，这样可以将RabbitMQ消息数据持久化保存到本地磁盘，即使RabbitMQ容器被删除，数据依然还在。</p><p>消费者的消息确认机制</p><p>rabbitmq怎么知道消息被接受了呢？</p><p>acknowledge 确认机制  用手动模式</p><p>work消息模型（任务模型）</p><p>队列里的消息越来越多，内存总有存满的一天消息会丢失，消息堆积。耗时较长的比如发短信，需要用mq。</p><p>让多个消费者绑定一个队列，共同消费队列中的消息。队列中的消息一旦消费，就会消失，因此任务是不会被重复执行的。</p><p>channel.basicQos(1); 设置每次消费一个信息，解决消息堆积问题。</p><p>2.3.订阅模型分类</p><p>1、1个生产者，多个消费者</p><p>2、每一个消费者都有自己的一个队列</p><p>3、生产者没有将消息直接发送到队列，而是发送到了交换机</p><p>4、每个队列都要绑定到交换机</p><p>5、生产者发送的消息，经过交换机到达队列，实现一个消息被多个消费者获取的目的</p><p>X（Exchanges）：交换机一方面：接收生产者发送的消息。另一方面：知道如何处理消息，例如递交给某个特别队列、递交给所有队列、或是将消息丢弃。到底如何操作，取决于Exchange的类型。</p><p>Exchange类型有以下几种：</p><pre><code>Fanout：广播，将消息交给所有绑定到交换机的队列Direct：定向，把消息交给符合指定routing key 的队列Topic：通配符，把消息交给符合routing pattern（路由模式） 的队列</code></pre><p>我们这里先学习</p><p>Fanout：即广播模式</p><p>Exchange（交换机）只负责转发消息，不具备存储消息的能力，因此如果没有任何队列与Exchange绑定，或者没有符合路由规则的队列，那么消息会丢失！</p><p>订阅模型-Fanout</p><p>1） 可以有多个消费者</p><p>2）  每个消费者有自己的queue（队列）</p><p>3）  每个队列都要绑定到Exchange（交换机）</p><p>4）  生产者发送的消息，只能发送到交换机，交换机来决定要发给哪个队列，生产者无法决定。</p><p>5）  交换机把消息发送给绑定过的所有队列</p><p>6）  队列的消费者都能拿到消息。实现一条消息被多个消费者消费</p><p>两个变化：</p><p>1）  声明Exchange，不再声明Queue</p><p>2）  发送消息到Exchange，不再发送到Queue</p><p>步骤：</p><p>// 获取到连接</p><p>// 获取通道</p><p>// 声明队列</p><p>// 绑定队列到交换机</p><p>// 定义队列的消费者</p><p>// 获取消息，并且处理，这个方法类似事件监听，如果有消息的时候，会被自动调用</p><p>// 监听队列，手动返回完成</p><p>订阅模型-Direct</p><p>有选择性的接收消息</p><p>在订阅模式中，生产者发布消息，所有消费者都可以获取所有消息。</p><p>在路由模式中，我们将添加一个功能 - 我们将只能订阅一部分消息。 例如，我们只能将重要的错误消息引导到日志文件（以节省磁盘空间），同时仍然能够在控制台上打印所有日志消息。</p><p>但是，在某些场景下，我们希望不同的消息被不同的队列消费。这时就要用到Direct类型的Exchange。</p><p>在Direct模型下，队列与交换机的绑定，不能是任意绑定了，而是要指定一个RoutingKey（路由key）</p><p>消息的发送方在向Exchange发送消息时，也必须指定消息的routing key</p><p>绑定队列到交换机，同时指定需要订阅的routing key。需要 update、delete</p><p>订阅模型-Topic</p><p>Topic类型的Exchange与Direct相比，都是可以根据RoutingKey把消息路由到不同的队列。只不过Topic类型Exchange可以让队列在绑定Routing key 的时候使用通配符！</p><p>Routingkey 一般都是有一个或多个单词组成，多个单词之间以”.”分割，例如： item.insert</p><p>通配符规则：</p><pre><code>#：匹配一个或多个词*：匹配不多不少恰好1个词</code></pre><p>举例：</p><pre><code>audit.#：能够匹配audit.irs.corporate 或者 audit.irsaudit.*：只能匹配audit.irs</code></pre><p>面试题：</p><p>如何避免消息丢失？</p><p>1）  消费者的ACK机制。可以防止消费者丢失消息。</p><p>2）  但是，如果在消费者消费之前，MQ就宕机了，消息就没了。</p><p>是可以将消息进行持久化呢？</p><p>要将消息持久化，前提是：队列、Exchange都持久化</p><p>durable 持久化</p><p>AmqpTemplate 统一的spring消息处理模板；</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;摘要： 使用RabbitMQ的消息队列，可以有效提高系统的峰值处理能力。&lt;/p&gt;
+&lt;p&gt;RabbitMQ是消息代理(Message Broker)，它支持多种异步消息处理方式，最常见的有：&lt;/p&gt;
+&lt;p&gt;Work Queue：将消息缓存到一个队列，默认情况下，多个worke
+      
+    
+    </summary>
+    
+      <category term="编程人生" scheme="lilyhuli.github.io/categories/%E7%BC%96%E7%A8%8B%E4%BA%BA%E7%94%9F/"/>
+    
+    
+      <category term="java" scheme="lilyhuli.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>丝袜哥</title>
