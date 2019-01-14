@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="lilyhuli.github.io/"/>
-  <updated>2019-01-13T16:44:31.591Z</updated>
+  <updated>2019-01-14T14:18:57.976Z</updated>
   <id>lilyhuli.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>springsecurity整合jwt</title>
+    <link href="lilyhuli.github.io/2019/01/14/springsecurity%E6%95%B4%E5%90%88jwt/"/>
+    <id>lilyhuli.github.io/2019/01/14/springsecurity整合jwt/</id>
+    <published>2019-01-14T14:17:54.000Z</published>
+    <updated>2019-01-14T14:18:57.976Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="springsecurity-jwt"><a href="#springsecurity-jwt" class="headerlink" title="springsecurity_jwt"></a>springsecurity_jwt</h1><p>springsecurity结合jwt<br>今天写下Spring Security整合jwt的一个简单小Demo，目的是登录后实现返回token</p><p>明天整合通用树形显示和vue前端显示 现在只能通过postman简单测试</p><p>jwt存在争议，但是很容易上手，分布式场景下不能再用ck-session的组合了</p><p>经典的三表结构比昨天的demo更有工业价值，代码放在Github上了 <a href="https://github.com/lilyhuli/springsecurity_jwt/" target="_blank" rel="noopener">https://github.com/lilyhuli/springsecurity_jwt/</a> 欢迎大家star、issues</p><p>ps：郁闷的七牛云图床必须要绑定备案域名了，后来发现issues直接拖拽就能当做图床，还是不要滥用呀。</p><p><img src="https://user-images.githubusercontent.com/32732399/51117727-956ae280-1849-11e9-8693-eb8787d27935.jpg" alt="Image text"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;springsecurity-jwt&quot;&gt;&lt;a href=&quot;#springsecurity-jwt&quot; class=&quot;headerlink&quot; title=&quot;springsecurity_jwt&quot;&gt;&lt;/a&gt;springsecurity_jwt&lt;/h1&gt;&lt;p&gt;spring
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Spring Security </title>
