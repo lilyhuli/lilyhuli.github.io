@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="lilyhuli.github.io/"/>
-  <updated>2019-01-18T14:35:57.058Z</updated>
+  <updated>2019-02-22T13:34:03.825Z</updated>
   <id>lilyhuli.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring 面试题总结</title>
+    <link href="lilyhuli.github.io/2019/02/16/myNewTestBlog/"/>
+    <id>lilyhuli.github.io/2019/02/16/myNewTestBlog/</id>
+    <published>2019-02-15T18:56:43.000Z</published>
+    <updated>2019-02-22T13:34:03.825Z</updated>
+    
+    <content type="html"><![CDATA[<font size="4" face="黑体">1、什么是 Spring 框架？Spring 框架有哪些主要模块？</font><br><br><br><font size="2">Spring 框架是一个为 Java 应用程序的开发提供了综合、广泛的基础性支持的 Java 平台。Spring帮助开发者解决了开发中基础性的问题，使得开发人员可以专注于应用程序的开发。Spring 框架本身亦是按照设计模式精心打造，这使得我们可以在开发环境中安心的集成 Spring 框架，不必担心 Spring 是如何在后台进行工作的。Spring 框架至今已集成了 20 多个模块。这些模块主要被分如下图所示的核心容器、数据访问/集成,、Web、AOP（面向切面编程）、工具、消息和测试模块。</font><br><br><br><font size="4" face="黑体">2、Spring 框架中都用到了哪些设计模式？</font><br><br><br><font size="2">Spring 框架中使用到了大量的设计模式，下面列举了比较有代表性的：1、代理模式—在 AOP 和 remoting 中被用的比较多。2、单例模式：在 spring 配置文件中定义的 bean 默认为单例模式。3、模板模式：用来解决代码重复的问题。比如. RestTemplate, JmsTemplate, JpaTemplate。4、委派模式：Spring 提供了 DispatcherServlet 来对请求进行分发。5、工厂模式：BeanFactory 用来创建对象的实例，贯穿于 BeanFactory / ApplicationContext接口的核心理念。6、代理模式：AOP 思想的底层实现技术，Spring 中采用 JDK Proxy 和 CgLib 类库。</font>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;font size=&quot;4&quot; face=&quot;黑体&quot;&gt;1、什么是 Spring 框架？Spring 框架有哪些主要模块？&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;Spring 框架是一个为 Java 应用程序的开发提供了综合、广泛的基础性支持的 Java 平
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>秒杀，了解一下</title>
