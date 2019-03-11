@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="lilyhuli.github.io/"/>
-  <updated>2019-03-11T16:40:19.116Z</updated>
+  <updated>2019-03-11T17:10:22.607Z</updated>
   <id>lilyhuli.github.io/</id>
   
   <author>
@@ -15,6 +15,96 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>redis 5种数据类型</title>
+    <link href="lilyhuli.github.io/2019/03/12/redis-%E7%89%A9%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>lilyhuli.github.io/2019/03/12/redis-物种数据类型/</id>
+    <published>2019-03-11T17:08:52.000Z</published>
+    <updated>2019-03-11T17:10:22.607Z</updated>
+    
+    <content type="html"><![CDATA[<p>RedisTemplate基本操作</p><p>Spring Data Redis 提供了一个工具类：RedisTemplate。里面封装了对于Redis的五种数据结构的各种操作，包括：</p><ul><li>redisTemplate.opsForValue() ：操作字符串</li><li>redisTemplate.opsForHash() ：操作hash</li><li>redisTemplate.opsForList()：操作list</li><li>redisTemplate.opsForSet()：操作set</li><li>redisTemplate.opsForZSet()：操作zset</li></ul><p>其它一些通用命令，如expire，可以通过redisTemplate.xx()来直接调用</p><p>5种结构：</p><ul><li>String：等同于java中的，<code>Map&lt;String,String&gt;</code></li><li>list：等同于java中的<code>Map&lt;String,List&lt;String&gt;&gt;</code></li><li>set：等同于java中的<code>Map&lt;String,Set&lt;String&gt;&gt;</code></li><li>sort_set：可排序的set</li><li>hash：等同于java中的：<code>Map&lt;String,Map&lt;String,String&gt;&gt;</code></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;RedisTemplate基本操作&lt;/p&gt;
+&lt;p&gt;Spring Data Redis 提供了一个工具类：RedisTemplate。里面封装了对于Redis的五种数据结构的各种操作，包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;redisTemplate.opsForValue() ：
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>静态化</title>
+    <link href="lilyhuli.github.io/2019/03/12/%E9%9D%99%E6%80%81%E5%8C%96/"/>
+    <id>lilyhuli.github.io/2019/03/12/静态化/</id>
+    <published>2019-03-11T17:00:49.000Z</published>
+    <updated>2019-03-11T17:08:34.504Z</updated>
+    
+    <content type="html"><![CDATA[<p>静态化是指把动态生成的HTML页面变为静态内容保存，以后用户的请求到来，直接访问静态页面，不再经过服务的渲染。</p><p>而静态的HTML页面可以部署在nginx中，从而大大提高并发能力，减小tomcat压力。</p><p>目前，静态化页面都是通过模板引擎来生成，而后保存到nginx服务器来部署。常用的模板引擎比如：</p><ul><li>Freemarker</li><li>Velocity</li><li>Thymeleaf</li></ul><p>Thymeleaf除了可以把渲染结果写入Response，也可以写到本地文件，从而实现静态化。</p><p>接下来，我们修改nginx，让它对商品请求进行监听，指向本地静态页面，如果本地没找到，才进行反向代理：</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;静态化是指把动态生成的HTML页面变为静态内容保存，以后用户的请求到来，直接访问静态页面，不再经过服务的渲染。&lt;/p&gt;
+&lt;p&gt;而静态的HTML页面可以部署在nginx中，从而大大提高并发能力，减小tomcat压力。&lt;/p&gt;
+&lt;p&gt;目前，静态化页面都是通过模板引擎来生成，而后
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SPU和SKU</title>
+    <link href="lilyhuli.github.io/2019/03/12/SPU%E5%92%8CSKU/"/>
+    <id>lilyhuli.github.io/2019/03/12/SPU和SKU/</id>
+    <published>2019-03-11T16:57:57.000Z</published>
+    <updated>2019-03-11T17:00:33.455Z</updated>
+    
+    <content type="html"><![CDATA[<p>按照这个理解，SPU就是俗称的“款”；SKU就是商品的“件”。</p><p>spu 和 sku 都是属性值的集合, 举个栗子 &gt;&gt;一部 6S, 它身上有很多的属性和值. 比如 :毛重: 420.00 g产地: 中国大陆容量: 16G, 64G, 128G颜色: 银, 白, 玫瑰金你跑进苏宁顺电, 说想要一台 6S, 店员也会再继续问: 你想要什么 6S? 16G 银色? 64G 白色?每一台 6S 的毛重都是 420.00 g, 产地也都是 中国大陆. 这两个属性就属于 spu 属性.而容量和颜色, 这种会影响价格和库存的(比如 16G 与 64G 的价格不同, 16G 银色还有货, 金色卖完了)属性就是 sku 属性.spu 属性(不会影响到库存和价格的属性, 又叫关键属性) &gt;&gt;毛重: 420.00 g产地: 中国大陆sku 属性(会影响到库存和价格的属性, 又叫销售属性) &gt;&gt;容量: 16G, 64G, 128G颜色: 银, 白, 玫瑰金sku 在生成时, 会根据 属性生成 相应的 笛卡尔积.想像一下扑克牌的黑红梅方和 A-K, 扑克牌是这样的 sku 属性:牌面: A - K花色: 黑红梅方最终会生成 13 <em> 4 = 52 张牌, 上面的 6S 则会生成 3 </em> 3 = 9 个 SKU商品 : iphone 6sspu : 包含在每一部 6s 的属性集合, 与商品是一对一的关系(产地:中国, 毛重:420g…)sku : 影响价格和库存的 属性集合, 与商品是多对一的关系单品 : 同 sku. 国人的另一种叫法!~</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;按照这个理解，SPU就是俗称的“款”；SKU就是商品的“件”。&lt;/p&gt;
+&lt;p&gt;spu 和 sku 都是属性值的集合, 举个栗子 &amp;gt;&amp;gt;一部 6S, 它身上有很多的属性和值. 比如 :毛重: 420.00 g产地: 中国大陆容量: 16G, 64G, 128G颜色:
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用spring ResponseEntity处理http响应</title>
+    <link href="lilyhuli.github.io/2019/03/12/%E4%BD%BF%E7%94%A8spring-ResponseEntity%E5%A4%84%E7%90%86http%E5%93%8D%E5%BA%94/"/>
+    <id>lilyhuli.github.io/2019/03/12/使用spring-ResponseEntity处理http响应/</id>
+    <published>2019-03-11T16:54:34.000Z</published>
+    <updated>2019-03-11T16:56:15.494Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用spring时，达到同一目的通常有很多方法，对处理http响应也是一样。本文我们学习如何通过ResponseEntity设置http相应内容、状态以及头信息。ResponseEntity<br>ResponseEntity标识整个http相应：状态码、头部信息以及相应体内容。因此我们可以使用其对http响应实现完整配置。</p><p>如果需要使用ResponseEntity，必须在请求点返回，通常在spring rest中实现。ResponseEntity是通用类型，因此可以使用任意类型作为响应体：<br>@GetMapping(“/hello”)<br>ResponseEntity<string> hello() {<br>    return new ResponseEntity&lt;&gt;(“Hello World!”, HttpStatus.OK);</string></p><p>  简单粗暴的讲</p><p>@ResponseBody可以直接返回Json结果，</p><p>@ResponseEntity不仅可以返回json结果，还可以定义返回的HttpHeaders和HttpStatus<br>}</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用spring时，达到同一目的通常有很多方法，对处理http响应也是一样。本文我们学习如何通过ResponseEntity设置http相应内容、状态以及头信息。ResponseEntity&lt;br&gt;ResponseEntity标识整个http相应：状态码、头部信息以及相应体
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>ES 搜索</title>
@@ -33,6 +123,28 @@
 &lt;p&gt;索引（indices）——————————–Databases 数据库&lt;/p&gt;
 &lt;p&gt;​    类型（type）—————————–Table 数据表&lt;/p&gt;
 &lt;p&gt;​         文档（Do
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>分布式锁</title>
+    <link href="lilyhuli.github.io/2019/02/28/zookeeper%E7%9A%84%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/"/>
+    <id>lilyhuli.github.io/2019/02/28/zookeeper的应用场景/</id>
+    <published>2019-02-28T12:51:23.000Z</published>
+    <updated>2019-03-11T17:08:38.571Z</updated>
+    
+    <content type="html"><![CDATA[<p>redis的redlock，是redis官方支持的一种分布式锁算法，<br>给redis</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;redis的redlock，是redis官方支持的一种分布式锁算法，&lt;br&gt;给redis&lt;/p&gt;
+
       
     
     </summary>
