@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="lilyhuli.github.io">
-  <title>ES 搜索 | TangDon的博客</title>
+  <title>Java 之 JUC | TangDon的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="es与kibana结合 在kibana中编写restful命令 索引（indices）——————————–Databases 数据库 ​    类型（type）—————————–Table 数据表 ​         文档（Document）—————-Row 行 ​           字段（Field）——————-Columns 列  映射是定义文档的过程，文档包含哪些字段，这些字段是否">
+  <meta name="description" content="java.util.concurrent  volatile  当多个线程进行操作共享数据时,可以保证内存中的数据是可见的;相较于 synchronized 是一种较为轻量级的同步策略;volatile 不具备”互斥性”;volatile 不能保证变量的”原子性”; 原子性atomic 提供了常用的原子变量 使用volatile修饰 保证了内存可见性.getAndIncrement() 自增运算">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ES 搜索">
-<meta property="og:url" content="lilyhuli.github.io/2019/03/12/ES-搜索/index.html">
+<meta property="og:title" content="Java 之 JUC">
+<meta property="og:url" content="lilyhuli.github.io/2019/03/12/Untitled/index.html">
 <meta property="og:site_name" content="TangDon的博客">
-<meta property="og:description" content="es与kibana结合 在kibana中编写restful命令 索引（indices）——————————–Databases 数据库 ​    类型（type）—————————–Table 数据表 ​         文档（Document）—————-Row 行 ​           字段（Field）——————-Columns 列  映射是定义文档的过程，文档包含哪些字段，这些字段是否">
+<meta property="og:description" content="java.util.concurrent  volatile  当多个线程进行操作共享数据时,可以保证内存中的数据是可见的;相较于 synchronized 是一种较为轻量级的同步策略;volatile 不具备”互斥性”;volatile 不能保证变量的”原子性”; 原子性atomic 提供了常用的原子变量 使用volatile修饰 保证了内存可见性.getAndIncrement() 自增运算">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-11T16:40:19.116Z">
+<meta property="og:updated_time" content="2019-03-12T12:56:59.305Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ES 搜索">
-<meta name="twitter:description" content="es与kibana结合 在kibana中编写restful命令 索引（indices）——————————–Databases 数据库 ​    类型（type）—————————–Table 数据表 ​         文档（Document）—————-Row 行 ​           字段（Field）——————-Columns 列  映射是定义文档的过程，文档包含哪些字段，这些字段是否">
+<meta name="twitter:title" content="Java 之 JUC">
+<meta name="twitter:description" content="java.util.concurrent  volatile  当多个线程进行操作共享数据时,可以保证内存中的数据是可见的;相较于 synchronized 是一种较为轻量级的同步策略;volatile 不具备”互斥性”;volatile 不能保证变量的”原子性”; 原子性atomic 提供了常用的原子变量 使用volatile修饰 保证了内存可见性.getAndIncrement() 自增运算">
   
     <link rel="alternative" href="/atom.xml" title="TangDon的博客" type="application/atom+xml">
   
@@ -140,77 +140,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-ES-搜索" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Untitled" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      ES 搜索
+      Java 之 JUC
     </h1>
   
 
         
-        <a href="/2019/03/12/ES-搜索/" class="archive-article-date">
-  	<time datetime="2019-03-11T16:18:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
+        <a href="/2019/03/12/Untitled/" class="archive-article-date">
+  	<time datetime="2019-03-12T09:28:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>es与kibana结合 在kibana中编写restful命令</p>
-<p>索引（indices）——————————–Databases 数据库</p>
-<p>​    类型（type）—————————–Table 数据表</p>
-<p>​         文档（Document）—————-Row 行</p>
-<p>​           字段（Field）——————-Columns 列 </p>
-<p>映射是定义文档的过程，文档包含哪些字段，这些字段是否保存，是否索引，是否分词等</p>
-<p>只有配置清楚，Elasticsearch才会帮我们进行索引库的创建（不一定）</p>
-<ul>
-<li><p>String类型，又分两种：</p>
-<ul>
-<li>text：可分词，不可参与聚合</li>
-<li>keyword：不可分词，数据会作为完整字段进行匹配，可以参与聚合</li>
-</ul>
-</li>
-<li><p>Numerical：数值类型，分两类</p>
-<ul>
-<li>基本数据类型：long、interger、short、byte、double、float、half_float</li>
-<li>浮点数的高精度类型：scaled_float<ul>
-<li>需要指定一个精度因子，比如10或100。elasticsearch会把真实值乘以这个因子后存储，取出时再还原。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Date：日期类型</p>
-<p>elasticsearch可以对日期格式化为字符串存储，但是建议我们存储为毫秒值，存储为long，节省空间。</p>
-<p>@Document(indexName = “item”,type = “docs”, shards = 1, replicas = 0)<br>public class Item {<br>  @Id<br>  private Long id;</p>
-<p>  @Field(type = FieldType.Text, analyzer = “ik_max_word”)<br>  private String title; //标题</p>
-<p>  @Field(type = FieldType.Keyword)<br>  private String category;// 分类</p>
-<p>  @Field(type = FieldType.Keyword)<br>  private String brand; // 品牌</p>
-<p>  @Field(type = FieldType.Double)<br>  private Double price; // 价格</p>
-<p>  @Field(index = false, type = FieldType.Keyword)<br>  private String images; // 图片地址<br>}</p>
-</li>
-</ul>
-<p>  Spring Data通过注解来声明字段的映射属性，有下面的三个注解：</p>
-<ul>
-<li><code>@Document</code> 作用在类，标记实体类为文档对象，一般有两个属性<ul>
-<li>indexName：对应索引库名称</li>
-<li>type：对应在索引库中的类型</li>
-<li>shards：分片数量，默认5</li>
-<li>replicas：副本数量，默认1</li>
-</ul>
-</li>
-<li><code>@Id</code> 作用在成员变量，标记一个字段作为id主键</li>
-<li><code>@Field</code> 作用在成员变量，标记为文档的字段，并指定字段映射属性：<ul>
-<li>type：字段类型，取值是枚举：FieldType</li>
-<li>index：是否索引，布尔类型，默认是true</li>
-<li>store：是否存储，布尔类型，默认是false</li>
-<li>analyzer：分词器名称</li>
-</ul>
-</li>
-</ul>
+        <p> java.util.concurrent</p>
+<p> volatile  当多个线程进行操作共享数据时,可以保证内存中的数据是可见的;相较于 synchronized 是一种<br>较为轻量级的同步策略;<br>volatile 不具备”互斥性”;<br>volatile 不能保证变量的”原子性”;</p>
+<p>原子性<br>atomic 提供了常用的原子变量 使用volatile修饰 保证了内存可见性<br>.getAndIncrement() 自增运算</p>
+<p>i++的操作实际上分为三个步骤: “读-改-写”;</p>
+<p>CAS算法是硬件对于并发的支持，针对多处理器操作而设计的处理器中的一种特殊指令，用于管理对共享数据的并发访问；</p>
+<p>CAS是一种无锁的非阻塞算法的实现</p>
+<p>ConcurrentHashMap 同步容器类是java5增加的一个线程安全的哈希表 介于hashmap与hashtable之间 内部采用锁分段机制替代hashtable的独占锁 进而提高性能  关键点 分段锁 替代 独占锁</p>
+<p>此包还提供了设计用于多线程上下文中的Collection实现: ConcurrentHashMap,ConcurrentSkipListMap<br>ConcurrentSkipListSet, CopyOnWriteArrayList 和 CopyOnWriteArraySet;</p>
+<p>当期望许多线程访问一个给定collection时,ConcurrentHashMap通常优于同步的HashMap;<br>ConcurrentSkipListMap通常优于同步的TreeMap;<br>当期望的读数和遍历远远大于列表的更新数时, CopyOnWriteArrayList优于同步的ArrayList;</p>
+<p>CountDownLatch是一个同步辅助类,在完成一组正在其他线程中执行的操作之前,它允许一个或多个线程一直等待;</p>
 
       
 
@@ -300,7 +259,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http:lilyhuli.github.io/2019/03/12/ES-搜索/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:lilyhuli.github.io/2019/03/12/Untitled/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -314,18 +273,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/03/12/使用spring-ResponseEntity处理http响应/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          使用spring ResponseEntity处理http响应
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/02/28/zookeeper的应用场景/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">分布式锁</div>
+    <a href="/2019/03/12/redis-物种数据类型/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">redis 5种数据类型</div>
       <i class="icon-circle-right"></i>
     </a>
   

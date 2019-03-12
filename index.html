@@ -138,6 +138,78 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Untitled" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/12/Untitled/">Java 之 JUC</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/12/Untitled/" class="archive-article-date">
+  	<time datetime="2019-03-12T09:28:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> java.util.concurrent</p>
+<p> volatile  当多个线程进行操作共享数据时,可以保证内存中的数据是可见的;相较于 synchronized 是一种<br>较为轻量级的同步策略;<br>volatile 不具备”互斥性”;<br>volatile 不能保证变量的”原子性”;</p>
+<p>原子性<br>atomic 提供了常用的原子变量 使用volatile修饰 保证了内存可见性<br>.getAndIncrement() 自增运算</p>
+<p>i++的操作实际上分为三个步骤: “读-改-写”;</p>
+<p>CAS算法是硬件对于并发的支持，针对多处理器操作而设计的处理器中的一种特殊指令，用于管理对共享数据的并发访问；</p>
+<p>CAS是一种无锁的非阻塞算法的实现</p>
+<p>ConcurrentHashMap 同步容器类是java5增加的一个线程安全的哈希表 介于hashmap与hashtable之间 内部采用锁分段机制替代hashtable的独占锁 进而提高性能  关键点 分段锁 替代 独占锁</p>
+<p>此包还提供了设计用于多线程上下文中的Collection实现: ConcurrentHashMap,ConcurrentSkipListMap<br>ConcurrentSkipListSet, CopyOnWriteArrayList 和 CopyOnWriteArraySet;</p>
+<p>当期望许多线程访问一个给定collection时,ConcurrentHashMap通常优于同步的HashMap;<br>ConcurrentSkipListMap通常优于同步的TreeMap;<br>当期望的读数和遍历远远大于列表的更新数时, CopyOnWriteArrayList优于同步的ArrayList;</p>
+<p>CountDownLatch是一个同步辅助类,在完成一组正在其他线程中执行的操作之前,它允许一个或多个线程一直等待;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/12/Untitled/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-redis-物种数据类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -810,76 +882,6 @@
 
 
   
-    <article id="post-秒杀，了解一下" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/18/秒杀，了解一下/">秒杀，了解一下</a>
-    </h1>
-  
-
-        
-        <a href="/2019/01/18/秒杀，了解一下/" class="archive-article-date">
-  	<time datetime="2019-01-18T14:33:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="秒杀"><a href="#秒杀" class="headerlink" title="秒杀"></a>秒杀</h1><p>一个关于秒杀的故事 记录学习和工作点滴</p>
-<p>学习了redis和rabbitmq一直没有很好地应用，秒杀业务可以使用redis预减库存、消息队列异步下单逐级消减对数据库的访问；mysql最大的并发量才1000，</p>
-<p>所以瓶颈基本都是在数据库</p>
-<p>因为是前端菜鸟所以使用bootstrap jq 和后端的thymeleaf 中间件用rabbitmq/redis/druid；</p>
-<p>系统支持横向拓展，集群，优化缓存 异步下单 消峰 验证码框架也是用的数学验证最大强度的防止机器人；</p>
-<p>自己封装的jedis更易使用 使用jedisTemplate主要是spring给了cache功能，这里直接自己封装的。</p>
-<p>未完待续。</p>
-<p>项目地址：<a href="https://github.com/lilyhuli/miaosha" target="_blank" rel="noopener">https://github.com/lilyhuli/miaosha</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/01/18/秒杀，了解一下/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -969,11 +971,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
             
             <div class="clearfix"></div>

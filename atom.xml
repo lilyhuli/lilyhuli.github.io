@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="lilyhuli.github.io/"/>
-  <updated>2019-03-11T17:10:22.607Z</updated>
+  <updated>2019-03-12T12:56:59.305Z</updated>
   <id>lilyhuli.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 之 JUC</title>
+    <link href="lilyhuli.github.io/2019/03/12/Untitled/"/>
+    <id>lilyhuli.github.io/2019/03/12/Untitled/</id>
+    <published>2019-03-12T09:28:56.000Z</published>
+    <updated>2019-03-12T12:56:59.305Z</updated>
+    
+    <content type="html"><![CDATA[<p> java.util.concurrent</p><p> volatile  当多个线程进行操作共享数据时,可以保证内存中的数据是可见的;相较于 synchronized 是一种<br>较为轻量级的同步策略;<br>volatile 不具备”互斥性”;<br>volatile 不能保证变量的”原子性”;</p><p>原子性<br>atomic 提供了常用的原子变量 使用volatile修饰 保证了内存可见性<br>.getAndIncrement() 自增运算</p><p>i++的操作实际上分为三个步骤: “读-改-写”;</p><p>CAS算法是硬件对于并发的支持，针对多处理器操作而设计的处理器中的一种特殊指令，用于管理对共享数据的并发访问；</p><p>CAS是一种无锁的非阻塞算法的实现</p><p>ConcurrentHashMap 同步容器类是java5增加的一个线程安全的哈希表 介于hashmap与hashtable之间 内部采用锁分段机制替代hashtable的独占锁 进而提高性能  关键点 分段锁 替代 独占锁</p><p>此包还提供了设计用于多线程上下文中的Collection实现: ConcurrentHashMap,ConcurrentSkipListMap<br>ConcurrentSkipListSet, CopyOnWriteArrayList 和 CopyOnWriteArraySet;</p><p>当期望许多线程访问一个给定collection时,ConcurrentHashMap通常优于同步的HashMap;<br>ConcurrentSkipListMap通常优于同步的TreeMap;<br>当期望的读数和遍历远远大于列表的更新数时, CopyOnWriteArrayList优于同步的ArrayList;</p><p>CountDownLatch是一个同步辅助类,在完成一组正在其他线程中执行的操作之前,它允许一个或多个线程一直等待;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt; java.util.concurrent&lt;/p&gt;
+&lt;p&gt; volatile  当多个线程进行操作共享数据时,可以保证内存中的数据是可见的;相较于 synchronized 是一种&lt;br&gt;较为轻量级的同步策略;&lt;br&gt;volatile 不具备”互斥性”;&lt;br&gt;volati
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>redis 5种数据类型</title>
