@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="lilyhuli.github.io">
-  <title>hexo博客的诞生 | TangDon的博客</title>
+  <title>HashMap 与 concurrentHashMap | TangDon的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="该博客托管在github pages上，所以免去了备案等手续，域名还没有申请，暂时先用github的。      友：市面上已经有很多现成的博客平台，为什么还要自己搭建一个？   我：想到搭建的目的，一来是自己的拖延症越来越严重，一点点小借口都能摧毁曾经燃起的雄雄壮志，做一个独立博客，记录生活点滴，技术感悟，望自己能成长的快些；二来作为个人营销的门面，喜欢卖弄和自我营销的我当然还建一个独立的博客，">
-<meta name="keywords" content="hexo">
+  <meta name="description" content="HashMap 1.7的HashMap   static Entry&amp;lt;K,V&amp;gt; implements Map.Entry&amp;lt;K,V&amp;gt;{      final K key;    V value;    Entry&amp;lt;K,V&amp;gt; next;    int hash;  }  HashMap 里是一个数组,然后数组中每一个元素是一个单向链表。 每一个绿色的实体是嵌套类E">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo博客的诞生">
-<meta property="og:url" content="lilyhuli.github.io/2017/11/10/hexo/index.html">
+<meta property="og:title" content="HashMap 与 concurrentHashMap">
+<meta property="og:url" content="lilyhuli.github.io/2019/03/12/HashMap-与-concurrentHashMap/index.html">
 <meta property="og:site_name" content="TangDon的博客">
-<meta property="og:description" content="该博客托管在github pages上，所以免去了备案等手续，域名还没有申请，暂时先用github的。      友：市面上已经有很多现成的博客平台，为什么还要自己搭建一个？   我：想到搭建的目的，一来是自己的拖延症越来越严重，一点点小借口都能摧毁曾经燃起的雄雄壮志，做一个独立博客，记录生活点滴，技术感悟，望自己能成长的快些；二来作为个人营销的门面，喜欢卖弄和自我营销的我当然还建一个独立的博客，">
+<meta property="og:description" content="HashMap 1.7的HashMap   static Entry&amp;lt;K,V&amp;gt; implements Map.Entry&amp;lt;K,V&amp;gt;{      final K key;    V value;    Entry&amp;lt;K,V&amp;gt; next;    int hash;  }  HashMap 里是一个数组,然后数组中每一个元素是一个单向链表。 每一个绿色的实体是嵌套类E">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-07T17:35:48.249Z">
+<meta property="og:image" content="https://javadoop.com/blogimages/map/1.png">
+<meta property="og:image" content="https://javadoop.com/blogimages/map/2.png">
+<meta property="og:updated_time" content="2019-03-12T14:21:04.742Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo博客的诞生">
-<meta name="twitter:description" content="该博客托管在github pages上，所以免去了备案等手续，域名还没有申请，暂时先用github的。      友：市面上已经有很多现成的博客平台，为什么还要自己搭建一个？   我：想到搭建的目的，一来是自己的拖延症越来越严重，一点点小借口都能摧毁曾经燃起的雄雄壮志，做一个独立博客，记录生活点滴，技术感悟，望自己能成长的快些；二来作为个人营销的门面，喜欢卖弄和自我营销的我当然还建一个独立的博客，">
+<meta name="twitter:title" content="HashMap 与 concurrentHashMap">
+<meta name="twitter:description" content="HashMap 1.7的HashMap   static Entry&amp;lt;K,V&amp;gt; implements Map.Entry&amp;lt;K,V&amp;gt;{      final K key;    V value;    Entry&amp;lt;K,V&amp;gt; next;    int hash;  }  HashMap 里是一个数组,然后数组中每一个元素是一个单向链表。 每一个绿色的实体是嵌套类E">
+<meta name="twitter:image" content="https://javadoop.com/blogimages/map/1.png">
   
     <link rel="alternative" href="/atom.xml" title="TangDon的博客" type="application/atom+xml">
   
@@ -141,30 +143,44 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-HashMap-与-concurrentHashMap" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo博客的诞生
+      HashMap 与 concurrentHashMap
     </h1>
   
 
         
-        <a href="/2017/11/10/hexo/" class="archive-article-date">
-  	<time datetime="2017-11-10T09:52:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-10</time>
+        <a href="/2019/03/12/HashMap-与-concurrentHashMap/" class="archive-article-date">
+  	<time datetime="2019-03-12T13:49:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>该博客托管在github pages上，所以免去了备案等手续，域名还没有申请，暂时先用github的<br>。</p>
+        <p> HashMap<br> 1.7的HashMap<br> <img src="https://javadoop.com/blogimages/map/1.png" alt="Image text"></p>
+<p> <code>static Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt;{
+     final K key;
+   V value;
+   Entry&lt;K,V&gt; next;
+   int hash;
+ }</code></p>
+<p> HashMap 里是一个数组,然后数组中每一个元素是一个单向链表。<br> 每一个绿色的实体是嵌套类Entry实体 Entry包括 key value hash和用于单向链表的next</p>
+<p> capacity 当前数组的容量 始终保持2^n 可以扩容 扩容后数组大小是当前的2倍</p>
+<p> loadFactor 负载银子 默认为0.75</p>
+<p> threshold：扩容的阈值，等于 capacity * loadFactor</p>
+<p>因为要参与与操作 所以要把数组的大小保持为2的n次方的做法，Java7和Java的HashMap 和 ConcurrentHashMap都有相应要求，只不过实现的代码稍微有些不同</p>
+<p> 由于是双倍扩容 迁移过程中 会将原来的table[i] 中链表的所有节点 分拆到新的数组 newTable[i]和newTable[i+oldLength]位置上。如原来的数组16 那么0索引的数据会被重新安排到0 和16上</p>
+<p> 1.7的ConcurrentHashMap<br> 整个ConcurrentHashMap由一个个Segment组成 Segment代表段的意思<br>，很多地方都叫分段锁，每次加锁都锁住segment 锁的粒度很小，只要保证了每个Segment是线程安全的 也就实现了全局的线程安全 Concurrent默认是16 所以说ConcurrentHashMap 有 16个Segments 最多支持16个线程并发写，还有需要注意的是一旦值初始化是不可以扩容的；</p>
+<p>1.8 HashMap<br><img src="https://javadoop.com/blogimages/map/2.png" alt="Image text"></p>
+<p>和7最大的不同就是利用了红黑树，所以其由 数组+链表+红黑树组成<br>1.7的查找速时间长度取决于链表的长度 O(n) 采用了红黑树之后，当链表元素超过8个自动转成红黑树，时间复杂度变成了O（logn）；</p>
+<p>1.8的ConcurrentHashMap也采用了红黑树</p>
 
-
-   <p>友：市面上已经有很多现成的博客平台，为什么还要自己搭建一个？<br><br>   我：想到搭建的目的，一来是自己的拖延症越来越严重，一点点小借口都能摧毁曾经燃起的雄雄壮志，做一个独立博客，记录生活点滴，技术感悟，望自己能成长的快些；二来作为个人营销的门面，喜欢卖弄和自我营销的我当然还建一个独立的博客，简单的博客没什么技术含量，所以才更注重内容，符合极简主义的定位。</p>
       
 
       
@@ -203,17 +219,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -264,7 +269,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http:lilyhuli.github.io/2017/11/10/hexo/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:lilyhuli.github.io/2019/03/12/HashMap-与-concurrentHashMap/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -278,15 +283,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/04/22/swagger/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          丝袜哥
-        
-      </div>
-    </a>
   
+    <a href="/2019/03/12/死锁/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">死锁</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

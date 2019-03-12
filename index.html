@@ -138,6 +138,149 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-HashMap-与-concurrentHashMap" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/12/HashMap-与-concurrentHashMap/">HashMap 与 concurrentHashMap</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/12/HashMap-与-concurrentHashMap/" class="archive-article-date">
+  	<time datetime="2019-03-12T13:49:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> HashMap<br> 1.7的HashMap<br> <img src="https://javadoop.com/blogimages/map/1.png" alt="Image text"></p>
+<p> <code>static Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt;{
+     final K key;
+   V value;
+   Entry&lt;K,V&gt; next;
+   int hash;
+ }</code></p>
+<p> HashMap 里是一个数组,然后数组中每一个元素是一个单向链表。<br> 每一个绿色的实体是嵌套类Entry实体 Entry包括 key value hash和用于单向链表的next</p>
+<p> capacity 当前数组的容量 始终保持2^n 可以扩容 扩容后数组大小是当前的2倍</p>
+<p> loadFactor 负载银子 默认为0.75</p>
+<p> threshold：扩容的阈值，等于 capacity * loadFactor</p>
+<p>因为要参与与操作 所以要把数组的大小保持为2的n次方的做法，Java7和Java的HashMap 和 ConcurrentHashMap都有相应要求，只不过实现的代码稍微有些不同</p>
+<p> 由于是双倍扩容 迁移过程中 会将原来的table[i] 中链表的所有节点 分拆到新的数组 newTable[i]和newTable[i+oldLength]位置上。如原来的数组16 那么0索引的数据会被重新安排到0 和16上</p>
+<p> 1.7的ConcurrentHashMap<br> 整个ConcurrentHashMap由一个个Segment组成 Segment代表段的意思<br>，很多地方都叫分段锁，每次加锁都锁住segment 锁的粒度很小，只要保证了每个Segment是线程安全的 也就实现了全局的线程安全 Concurrent默认是16 所以说ConcurrentHashMap 有 16个Segments 最多支持16个线程并发写，还有需要注意的是一旦值初始化是不可以扩容的；</p>
+<p>1.8 HashMap<br><img src="https://javadoop.com/blogimages/map/2.png" alt="Image text"></p>
+<p>和7最大的不同就是利用了红黑树，所以其由 数组+链表+红黑树组成<br>1.7的查找速时间长度取决于链表的长度 O(n) 采用了红黑树之后，当链表元素超过8个自动转成红黑树，时间复杂度变成了O（logn）；</p>
+<p>1.8的ConcurrentHashMap也采用了红黑树</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/12/HashMap-与-concurrentHashMap/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-死锁" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/12/死锁/">死锁</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/12/死锁/" class="archive-article-date">
+  	<time datetime="2019-03-12T12:58:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>死锁发生的必要条件<br>1：互斥条件<br>2：请求和保持条件<br>3：不剥夺条件<br>4：环路等待条件</p>
+<p>o1sy时拿住o2<br>o2sy时拿住o1</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/12/死锁/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Untitled" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -733,155 +876,6 @@
 
 
   
-    <article id="post-MQ面试连环炮" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/24/MQ面试连环炮/">MQ面试连环炮</a>
-    </h1>
-  
-
-        
-        <a href="/2019/02/24/MQ面试连环炮/" class="archive-article-date">
-  	<time datetime="2019-02-24T10:27:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><font size="4" face="黑体">1、消息队列的作用？</font><br><br></p>
-<p><font size="2">核心3点：解耦、异步、削峰<br>1.abcd系统问题 2.大量用户通过浏览器（举办了一场活动）在中午高峰期进行了大量操作，大量系统涌入系统，比如说5000/秒,系统基于mysql，大量请求涌入mysql，每秒对mysql5000次冲击基本上挂掉，因为一般的mysql2000请求就会挂了，但是高峰期过了之后到下午就是低峰期，为了保证mysql不被打死，我们采用的方案就是加入一个mq，在请求端加入mq，系统a从mq中慢慢拉取请求，过了高峰期挤压的消息，就算不加机器一个小时也能消耗完。</font><br><br></p>
-<p><font size="4" face="黑体">2、保证消息队列的高可用？</font><br><br></p>
-<p><font size="2">MQ的缺点很明确，加入mq会让系统变得复杂，rabbitmq的高可用方式：rabbitmq有三种模式：单机模式，普通集群模式，镜像集群模式   1.单机模式没人用，2普通集群模式，就是在多台机器上启动多台实例，每个机器启动一个。但是你创建的queue只会在一个rabbitmq上，每个实例都会同步queue的元数据。Channel 声明队列 3.集群镜像模式 把需要的队列做成镜像队列，存在于多个节点，属于rabbitmq的ha方案。其实质和普通模式不同之处在于，消息实体会主动在镜像节点间同步，而不是在consumer取数据时临时拉取。kafka的高可用性：多个broker组成，每个broker是一个节点；你创建一个topic，这个topic可以划分为多个partition，每个partition可以存在于不同的broker上，每个partition就放一部分数据。kafka 0.8以后，提供了HA机制，就是replica副本机制。每个partition的数据都会同步到吉他机器上，形成自己的多个replica副本。然后所有replica会选举一个leader出来，那么生产和消费都跟这个leader打交道，然后其他replica就是follower。</font><br><br></p>
-<p><font size="4" face="黑体">2、保证消息队列的幂等性？</font><br><br></p>
-<p><font size="2">业界主流的幂等性有两种操作：</font></p>
-<p>1.唯一 ID + 指纹码 机制，利用数据库主键去重</p>
-<p>2.利用redis的原子性去实现</p>
-<p>kafka实际上有个offset的概念，就是每个消息写进去，都有一个offset，代表他的序号，然后consumer消费了数据之后，每隔一段时间，会把自己消费过的消息的offset提交一下，代表我已经消费过了，下次我要是重启啥的，你就让我继续从上次消费到的offset来继续消费吧。</p>
-<p>但是凡事总有意外，比如我们之前生产经常遇到的，就是你有时候重启系统，看你怎么重启了，如果碰到点着急的，直接kill进程了，再重启。这会导致consumer有些消息处理了，但是没来得及提交offset，尴尬了。重启之后，少数消息会再次消费一次。<br>给你举个例子吧。假设你有个系统，消费一条往数据库里插入一条，要是你一个消息重复两次，你不就插入了两条，这数据不就错了？但是你要是消费到第二次的时候，自己判断一下已经消费过了，直接扔了，不就保留了一条数据？</p>
-<p>一条数据重复出现两次，数据库里就只有一条数据，这就保证了系统的幂等性</p>
-<p>幂等性，我通俗点说，就一个数据，或者一个请求，给你重复来多次，你得确保对应的数据是不会改变的，不能出错。<br>其实还是得结合业务来思考，我这里给几个思路：<br>（1）比如你拿个数据要写库，你先根据主键查一下，如果这数据都有了，你就别插入了，update一下好吧</p>
-<p>（2）比如你是写redis，那没问题了，反正每次都是set，天然幂等性</p>
-<p>（3）比如你不是上面两个场景，那做的稍微复杂一点，你需要让生产者发送每条数据的时候，里面加一个全局唯一的id，类似订单id之类的东西，然后你这里消费到了之后，先根据这个id去比如redis里查一下，之前消费过吗？如果没有消费过，你就处理，然后这个id写redis。如果消费过了，那你就别处理了，保证别重复处理相同的消息即可。<br><br></p>
-<p><font size="4" face="黑体">3、保证消息的可靠性传输（如何处理消息丢失的问题）？</font><br></p>
-<p><font size="2">rabbitmq 1生产者弄丢了数据<br>confirm机制 2 rabbitmq弄丢了数据,设置持久化有两个步骤，第一个是创建queue的时候将其设置为持久化的，这样就可以保证rabbitmq持久化queue的元数据，但是不会持久化queue里的数据；第二个是发送消息的时候将消息的deliveryMode设置为2，就是将消息设置为持久化的，此时rabbitmq就会将消息持久化到磁盘上去。必须要同时设置这两个持久化才行，rabbitmq哪怕是挂了，再次重启，也会从磁盘上重启恢复queue，恢复这个queue里的数据。而且持久化可以跟生产者那边的confirm机制配合起来，只有消息被持久化到磁盘之后，才会通知生产者ack了，所以哪怕是在持久化到磁盘之前，rabbitmq挂了，数据丢了，生产者收不到ack，你也是可以自己重发的。3 消费端弄丢了数据 这个时候得用rabbitmq提供的ack机制，简单来说，就是你关闭rabbitmq自动ack，可以通过一个api来调用就行，然后每次你自己代码里确保处理完的时候，再程序里ack一把。这样的话，如果你还没处理完，不就没有ack？那rabbitmq就认为你还没处理完，这个时候rabbitmq会把这个消费分配给别的consumer去处理，消息是不会丢的。kafka  kafka会自动提交offset，那么只要关闭自动提交offset，在处理完之后自己手动提交offset，就可以保证数据不会丢。但是此时确实还是会重复消费，比如你刚处理完，还没提交offset，结果自己挂了，此时肯定会重复消费一次，自己保证幂等性就好了。 kafka弄丢了数据<br>给这个topic设置replication.factor参数：这个值必须大于1，要求每个partition必须有至少2个副本</font></p>
-<p>在kafka服务端设置min.insync.replicas参数：这个值必须大于1，这个是要求一个leader至少感知到有至少一个follower还跟自己保持联系，没掉队，这样才能确保leader挂了还有一个follower吧</p>
-<p>在producer端设置acks=all：这个是要求每条数据，必须是写入所有replica之后，才能认为是写成功了</p>
-<p>在producer端设置retries=MAX（很大很大很大的一个值，无限次重试的意思）：这个是要求一旦写入失败，就无限重试，卡在这里了</p>
-<p>我们生产环境就是按照上述要求配置的，这样配置之后，至少在kafka broker端就可以保证在leader所在broker发生故障，进行leader切换时，数据不会丢失<br><br><br></p>
-<p><font size="4" face="黑体">4、保证消息的顺序性？</font><br><br></p>
-<p><font size="2">那如何保证消息的顺序性呢？简单简单</font></p>
-<p>（1）rabbitmq：拆分多个queue，每个queue一个consumer，就是多一些queue而已，确实是麻烦点；或者就一个queue但是对应一个consumer，然后这个consumer内部用内存队列做排队，然后分发给底层不同的worker来处理</p>
-<p>（2）kafka：一个topic，一个partition，一个consumer，内部单线程消费，写N个内存queue，然后N个线程分别消费一个内存queue即可<br><br><br></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/24/MQ面试连环炮/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-myNewTestBlog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/16/myNewTestBlog/">Spring 面试题总结</a>
-    </h1>
-  
-
-        
-        <a href="/2019/02/16/myNewTestBlog/" class="archive-article-date">
-  	<time datetime="2019-02-15T18:56:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <font size="4" face="黑体">1、什么是 Spring 框架？Spring 框架有哪些主要模块？</font><br><br><br><font size="2">Spring 框架是一个为 Java 应用程序的开发提供了综合、广泛的基础性支持的 Java 平台。Spring帮助开发者解决了开发中基础性的问题，使得开发人员可以专注于应用程序的开发。Spring 框架本身亦是按照设计模式精心打造，这使得我们可以在开发环境中安心的集成 Spring 框架，不必担心 Spring 是如何在后台进行工作的。Spring 框架至今已集成了 20 多个模块。这些模块主要被分如下图所示的核心容器、数据访问/集成,、Web、AOP（面向切面编程）、工具、消息和测试模块。</font><br><br><br><font size="4" face="黑体">2、Spring 框架中都用到了哪些设计模式？</font><br><br><br><font size="2">Spring 框架中使用到了大量的设计模式，下面列举了比较有代表性的：1、代理模式—在 AOP 和 remoting 中被用的比较多。2、单例模式：在 spring 配置文件中定义的 bean 默认为单例模式。3、模板模式：用来解决代码重复的问题。比如. RestTemplate, JmsTemplate, JpaTemplate。4、委派模式：Spring 提供了 DispatcherServlet 来对请求进行分发。5、工厂模式：BeanFactory 用来创建对象的实例，贯穿于 BeanFactory / ApplicationContext接口的核心理念。6、代理模式：AOP 思想的底层实现技术，Spring 中采用 JDK Proxy 和 CgLib 类库。</font>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/16/myNewTestBlog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -971,11 +965,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
