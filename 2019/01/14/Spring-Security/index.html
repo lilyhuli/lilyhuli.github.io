@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="lilyhuli.github.io">
   <title>Spring Security  | TangDon的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -37,7 +37,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -160,7 +160,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>   趁着周末闲来无事学习了一下Spring Security，源码在 <a href=""></a>lilyhuli/spring_security_exam</p>
+        <p>   趁着周末闲来无事学习了一下Spring Security，源码在 <a href></a>lilyhuli/spring_security_exam</p>
 <p>   用到的技术：<br>   java<br>   springboot<br>   mybatis<br>   mysql<br>   后端框架thymeleaf</p>
 <p>需求如下：<br>Security中可以在内存中建立用户，留后门设置后门账号，以及数据库的结合访问。<br>和shiro一样 不同用户拥有不同权限，访问不同网页。<br>如果用户未登录，则返回首页，如果用户已登录，但是没有权限则返回json，告知。</p>
 <pre><code>网上的看了很多文章，Spring Security内置了三个基于投票，AccessDecisionManager实现类，它们分别是AffirmativeBased、ConsensusBased 和UnanimousBased。我觉得继承AccessDecisionManager，然后重写decide方法就可以。当然Spring Security的代码需要一点点debug才能了解其原理。搞完又过0点了，洗洗睡了，梦里啥都有。
@@ -408,7 +408,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
