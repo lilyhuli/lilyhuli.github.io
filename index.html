@@ -138,6 +138,79 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hello" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/30/hello/">Spark Sql 篇1</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/30/hello/" class="archive-article-date">
+  	<time datetime="2019-10-30T15:26:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-SparkSQL-概述"><a href="#1-SparkSQL-概述" class="headerlink" title="1 SparkSQL 概述"></a>1 SparkSQL 概述</h3><p>本章节测试代码已提交至：<a href="https://github.com/lilyhuli/spark" target="_blank" rel="noopener">https://github.com/lilyhuli/spark</a></p>
+<h4 id="1-1-什么是Spark-SQL"><a href="#1-1-什么是Spark-SQL" class="headerlink" title="1.1    什么是Spark SQL"></a>1.1    什么是Spark SQL</h4><p>&ensp;&ensp;&ensp;&ensp;Spark SQL 是Spark用来处理结构化数据的一个模块，它提供了2个编程抽象 DataFrame 和 DataSet，并且作为分布式SQL查询引擎的作用。</p>
+<h4 id="1-2-Spark-SQL的特点"><a href="#1-2-Spark-SQL的特点" class="headerlink" title="1.2    Spark SQL的特点"></a>1.2    Spark SQL的特点</h4><p>1易整合  2统一的数据访问方式  3兼容Hive  4标准的数据连接</p>
+<h4 id="1-3-什么是DataFrame"><a href="#1-3-什么是DataFrame" class="headerlink" title="1.3    什么是DataFrame"></a>1.3    什么是DataFrame</h4><p>&ensp;&ensp;&ensp;&ensp;与RDD类似，DataFrame也是一个分布式数据容器。然而DataFrame更像传统数据库的二维表格，除了数据以外，还记录数据的结构信息，即schema。同时，与Hive类似，DataFrame也支持嵌套数据类型（struct、array和map）。从API易用性的角度上看，DataFrame API提供的是一套高层的关系操作，比函数式的RDD API要更加友好，门槛更低。</p>
+<p><img src="https://github.com/lilyhuli/spark/raw/master/file/rddAndDataFrame.png" alt="avatar"></p>
+<p>上图直观地体现了DataFrame和RDD的区别。左侧的RDD[Person]虽然以Person为类型参数，但Spark框架本身不了解Person类的内部结构。而右侧的DataFrame却提供了详细的结构信息，使得Spark SQL可以清楚地知道该数据集中包含哪些列，每列的名称和类型各是什么。DataFrame是为数据提供了Schema的视图。可以把它当做数据库中的一张表来对待，DataFrame也是懒执行的。性能上比RDD要高，主要原因：<br>优化的执行计划：查询计划通过Spark catalyst optimiser进行优化。</p>
+<p><img src="https://github.com/lilyhuli/spark/raw/master/file/catalyst.png" alt="avatar"></p>
+<p><img src="https://github.com/lilyhuli/spark/raw/master/file/eg.png" alt="avatar"></p>
+<p><img src="https://github.com/lilyhuli/spark/raw/master/file/eg1.png" alt="avatar"></p>
+<p> 为了说明查询优化，我们来看上图展示的人口数据分析的示例。图中构造了两个DataFrame，将它们join之后又做了一次filter操作。如果原封不动地执行这个执行计划，最终的执行效率是不高的。因为join是一个代价较大的操作，也可能会产生一个较大的数据集。如果我们能将filter下推到 join下方，先对DataFrame进行过滤，再join过滤后的较小的结果集，便可以有效缩短执行时间。而Spark SQL的查询优化器正是这样做的。简而言之，逻辑查询计划优化就是一个利用基于关系代数的等价变换，将高成本的操作替换为低成本操作的过程。</p>
+<h4 id="1-4-什么是DataSet"><a href="#1-4-什么是DataSet" class="headerlink" title="1.4    什么是DataSet"></a>1.4    什么是DataSet</h4><p>1）是Dataframe API的一个扩展，是Spark最新的数据抽象。<br>2）用户友好的API风格，既具有类型安全检查也具有Dataframe的查询优化特性。<br>3）Dataset支持编解码器，当需要访问非堆上的数据时可以避免反序列化整个对象，提高了效率。<br>4）样例类被用来在Dataset中定义数据的结构信息，样例类中每个属性的名称直接映射到DataSet中的字段名称。<br>5） Dataframe是Dataset的特列，DataFrame=Dataset[Row] ，所以可以通过as方法将Dataframe转换为Dataset。    Row是一个类型，跟Car、Person这些的类型一样，所有的表结构信息我都用Row来表示。<br>6）DataSet是强类型的。比如可以有Dataset[Car]，Dataset[Person].<br>7）DataFrame只是知道字段，但是不知道字段的类型，所以在执行这些操作的时候是没办法在编译的时候检查是否类型失败的，比如你可以对一个String进行减法操作，在执行的时候才报错，而DataSet不仅仅知道字段，而且知道字段类型，所以有更严格的错误检查。就跟JSON对象和类对象之间的类比。  </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/30/hello/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-HashMap-与-concurrentHashMap" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -783,70 +856,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/02/28/zookeeper的应用场景/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-随记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/26/随记/">随记</a>
-    </h1>
-  
-
-        
-        <a href="/2019/02/26/随记/" class="archive-article-date">
-  	<time datetime="2019-02-25T16:53:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Rabbitmq：假设P1和C1注册了相同的Broker，Exchange和Queue。P1发送的消息最终会被C1消费。基本的通信流程大概如下所示：</p>
-<p>P1生产消息，发送给服务器端的Exchange<br>Exchange收到消息，根据ROUTINKEY，将消息转发给匹配的Queue1<br>Queue1收到消息，将消息发送给订阅者C1<br>C1收到消息，发送ACK给队列确认收到消息<br>Queue1收到ACK，删除队列中缓存的此条消息</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/02/26/随记/">展开全文 >></a>
         </p>
       
 
