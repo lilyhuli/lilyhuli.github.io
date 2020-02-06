@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="lilyhuli.github.io/"/>
-  <updated>2019-12-26T17:17:44.597Z</updated>
+  <updated>2020-02-06T11:22:19.667Z</updated>
   <id>lilyhuli.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>你不喜欢我了吗？</title>
+    <link href="lilyhuli.github.io/2020/02/06/%E4%BD%A0%E4%B8%8D%E5%96%9C%E6%AC%A2%E6%88%91%E4%BA%86%E5%90%97%EF%BC%9F/"/>
+    <id>lilyhuli.github.io/2020/02/06/你不喜欢我了吗？/</id>
+    <published>2020-02-06T11:05:05.000Z</published>
+    <updated>2020-02-06T11:22:19.667Z</updated>
+    
+    <content type="html"><![CDATA[<p>2020年的第二个月，我在老家朝北的小屋里郁郁寡欢，这年我30岁了，身边发生了好多事，每天在惊恐中醒来，担心的事情越来越多，我自上次谈恋爱已经五年了，还是没能遇到一个能走下去的姑娘。</p><p>敏感、脆弱的自己怎么能配的上一段美好的感情，时而冷酷皎洁，时而卑微如狗，三十岁我开始有了皱纹，头发越来越稀薄，肚腩越来越大，从前我还能听陈绮贞，现在听什么都烦躁不安。</p><p>写的东西越来越没逻辑，代码也越写越糟，学了那么久的设计模式还是不会用，我喜欢的姑娘呀，虽然我是那么矫情，那么无病呻吟，那么粗鄙，但是你真的不喜欢我了吗？ 我还记得你灵动的眼睛里都是我。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;2020年的第二个月，我在老家朝北的小屋里郁郁寡欢，这年我30岁了，身边发生了好多事，每天在惊恐中醒来，担心的事情越来越多，我自上次谈恋爱已经五年了，还是没能遇到一个能走下去的姑娘。&lt;/p&gt;
+&lt;p&gt;敏感、脆弱的自己怎么能配的上一段美好的感情，时而冷酷皎洁，时而卑微如狗，三十
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>付出型人格</title>
@@ -430,28 +452,6 @@
       
       
         &lt;h1 id=&quot;springsecurity-jwt&quot;&gt;&lt;a href=&quot;#springsecurity-jwt&quot; class=&quot;headerlink&quot; title=&quot;springsecurity_jwt&quot;&gt;&lt;/a&gt;springsecurity_jwt&lt;/h1&gt;&lt;p&gt;spring
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Spring Security </title>
-    <link href="lilyhuli.github.io/2019/01/14/Spring-Security/"/>
-    <id>lilyhuli.github.io/2019/01/14/Spring-Security/</id>
-    <published>2019-01-13T16:34:56.000Z</published>
-    <updated>2019-01-13T16:44:31.591Z</updated>
-    
-    <content type="html"><![CDATA[<p>   趁着周末闲来无事学习了一下Spring Security，源码在 <a href></a>lilyhuli/spring_security_exam</p><p>   用到的技术：<br>   java<br>   springboot<br>   mybatis<br>   mysql<br>   后端框架thymeleaf</p><p>需求如下：<br>Security中可以在内存中建立用户，留后门设置后门账号，以及数据库的结合访问。<br>和shiro一样 不同用户拥有不同权限，访问不同网页。<br>如果用户未登录，则返回首页，如果用户已登录，但是没有权限则返回json，告知。</p><pre><code>网上的看了很多文章，Spring Security内置了三个基于投票，AccessDecisionManager实现类，它们分别是AffirmativeBased、ConsensusBased 和UnanimousBased。我觉得继承AccessDecisionManager，然后重写decide方法就可以。当然Spring Security的代码需要一点点debug才能了解其原理。搞完又过0点了，洗洗睡了，梦里啥都有。</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;   趁着周末闲来无事学习了一下Spring Security，源码在 &lt;a href&gt;&lt;/a&gt;lilyhuli/spring_security_exam&lt;/p&gt;
-&lt;p&gt;   用到的技术：&lt;br&gt;   java&lt;br&gt;   springboot&lt;br&gt;   mybatis&lt;
       
     
     </summary>

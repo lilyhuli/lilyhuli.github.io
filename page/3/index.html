@@ -146,6 +146,72 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Spring-Security" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/14/Spring-Security/">Spring Security </a>
+    </h1>
+  
+
+        
+        <a href="/2019/01/14/Spring-Security/" class="archive-article-date">
+  	<time datetime="2019-01-13T16:34:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>   趁着周末闲来无事学习了一下Spring Security，源码在 <a href></a>lilyhuli/spring_security_exam</p>
+<p>   用到的技术：<br>   java<br>   springboot<br>   mybatis<br>   mysql<br>   后端框架thymeleaf</p>
+<p>需求如下：<br>Security中可以在内存中建立用户，留后门设置后门账号，以及数据库的结合访问。<br>和shiro一样 不同用户拥有不同权限，访问不同网页。<br>如果用户未登录，则返回首页，如果用户已登录，但是没有权限则返回json，告知。</p>
+<pre><code>网上的看了很多文章，Spring Security内置了三个基于投票，AccessDecisionManager实现类，它们分别是AffirmativeBased、ConsensusBased 和UnanimousBased。我觉得继承AccessDecisionManager，然后重写decide方法就可以。当然Spring Security的代码需要一点点debug才能了解其原理。搞完又过0点了，洗洗睡了，梦里啥都有。
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/01/14/Spring-Security/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-又是一年末尾" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -594,7 +660,7 @@ audit.*：只能匹配audit.irs
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 TangDon
+    		&copy; 2020 TangDon
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
