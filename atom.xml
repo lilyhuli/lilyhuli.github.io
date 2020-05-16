@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="lilyhuli.github.io/"/>
-  <updated>2020-02-06T11:22:19.667Z</updated>
+  <updated>2019-03-12T14:21:04.742Z</updated>
   <id>lilyhuli.github.io/</id>
   
   <author>
@@ -15,138 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>你不喜欢我了吗？</title>
-    <link href="lilyhuli.github.io/2020/02/06/%E4%BD%A0%E4%B8%8D%E5%96%9C%E6%AC%A2%E6%88%91%E4%BA%86%E5%90%97%EF%BC%9F/"/>
-    <id>lilyhuli.github.io/2020/02/06/你不喜欢我了吗？/</id>
-    <published>2020-02-06T11:05:05.000Z</published>
-    <updated>2020-02-06T11:22:19.667Z</updated>
-    
-    <content type="html"><![CDATA[<p>2020年的第二个月，我在老家朝北的小屋里郁郁寡欢，这年我30岁了，身边发生了好多事，每天在惊恐中醒来，担心的事情越来越多，我自上次谈恋爱已经五年了，还是没能遇到一个能走下去的姑娘。</p><p>敏感、脆弱的自己怎么能配的上一段美好的感情，时而冷酷皎洁，时而卑微如狗，三十岁我开始有了皱纹，头发越来越稀薄，肚腩越来越大，从前我还能听陈绮贞，现在听什么都烦躁不安。</p><p>写的东西越来越没逻辑，代码也越写越糟，学了那么久的设计模式还是不会用，我喜欢的姑娘呀，虽然我是那么矫情，那么无病呻吟，那么粗鄙，但是你真的不喜欢我了吗？ 我还记得你灵动的眼睛里都是我。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;2020年的第二个月，我在老家朝北的小屋里郁郁寡欢，这年我30岁了，身边发生了好多事，每天在惊恐中醒来，担心的事情越来越多，我自上次谈恋爱已经五年了，还是没能遇到一个能走下去的姑娘。&lt;/p&gt;
-&lt;p&gt;敏感、脆弱的自己怎么能配的上一段美好的感情，时而冷酷皎洁，时而卑微如狗，三十
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>付出型人格</title>
-    <link href="lilyhuli.github.io/2019/12/27/%E4%BB%98%E5%87%BA%E5%9E%8B%E4%BA%BA%E6%A0%BC/"/>
-    <id>lilyhuli.github.io/2019/12/27/付出型人格/</id>
-    <published>2019-12-26T16:54:22.000Z</published>
-    <updated>2019-12-26T17:17:44.597Z</updated>
-    
-    <content type="html"><![CDATA[<p>毕业五年半了，现在你已经活到了《银翼杀手》的2019年11月，预言没有成真，偌大的城市也没有你的容身之地，你居住在合租屋里；你胆小人生，不易相处；你想尽力去建立一段属于自己的亲密关系，所以你极力付出，讨好，但是换不来真心的，没人想要有答案的爱。</p><p>你常年失眠，整夜整夜的睡不着；你的工作一团糟，总有你学不完的知识；你活的小心翼翼，生怕这样的安稳也失去了；你不断用物质去填充自己的生活，快乐总是那么短暂；你无法潜下心去构建自己的城堡了；你经济独立了，可是人格总也独立不了；你马上30岁了，还是没有一个隐私的空间；你找不到人生的意义。</p><p>然后2020来了，这样的日子还要过吗？</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;毕业五年半了，现在你已经活到了《银翼杀手》的2019年11月，预言没有成真，偌大的城市也没有你的容身之地，你居住在合租屋里；你胆小人生，不易相处；你想尽力去建立一段属于自己的亲密关系，所以你极力付出，讨好，但是换不来真心的，没人想要有答案的爱。&lt;/p&gt;
-&lt;p&gt;你常年失眠，整
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Ignite与Spark</title>
-    <link href="lilyhuli.github.io/2019/11/29/Ignite%E4%B8%8ESpark/"/>
-    <id>lilyhuli.github.io/2019/11/29/Ignite与Spark/</id>
-    <published>2019-11-28T16:08:42.000Z</published>
-    <updated>2019-11-28T16:28:43.612Z</updated>
-    
-    <content type="html"><![CDATA[<p>Ignite作为Spark的RDD和DataFrame很好用，这周提前三天完成了任务就开始着手继续改造Ignite，顺便练习下Scala和Spark，还有引擎下推技术。</p><p>RDD和DataFrame的区别就在于DataFrame更像是一个二维表格，在这个二维表格里面，我们是知道每一列的名称,而RDD只是一个集群范围的、分区化的元素的集合。</p><p>我在我的github仓库中创建了一个spark学习的地址，跟踪学习状态，地址：<a href="https://github.com/lilyhuli/spark" target="_blank" rel="noopener">https://github.com/lilyhuli/spark</a></p><h5 id="IgniteRDD"><a href="#IgniteRDD" class="headerlink" title="IgniteRDD"></a>IgniteRDD</h5><p>IgniteRDD 是一个SparkRDD抽象的实现，它表示Ignite的缓存的活动视图。IgniteRDD是议程不变的，Ignit缓存所有的改变对于RDD用户都会立即可见。</p><p>IgniteRDD 利用Ignite缓存的分区性质然后向Spark执行器提供分区信息。IgniteRDD中的分区数量等于底层Ignite的分区数量。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">val cache = igniteContext.fromCache(&quot;partitioned&quot;)</span><br><span class="line">val resukt = cache.filter(_._.2.contains(&quot;Ignite&quot;)).collect()</span><br></pre></td></tr></table></figure></p><p>当然igniteRDD提供save 和 查询功能</p><h4 id="Ignite-DataFrame"><a href="#Ignite-DataFrame" class="headerlink" title="Ignite DataFrame"></a>Ignite DataFrame</h4><p>我觉得DataFrame才是Ignite与Spark结合的精髓，实在太简练了。代码也很容易读懂。</p><pre><code>val spark: SparkSession = …val cfgPath: String = “path/to/config/file”val jsonDataFrame = spark.read.json(“path/to/file.json”)jsonDataFrame.write  .format(FORMAT_IGNITE)  .option(OPTION_CONFIG_FILE, TEST_CONFIG_FILE)  .option(OPTION_TABLE, &quot;json_table&quot;)  .option(OPTION_CREATE_TABLE_PRIMARY_KEY_FIELDS, &quot;id&quot;)  .option(OPTION_CREATE_TABLE_PARAMETERS, &quot;template=replicated&quot;)  .save()</code></pre><p>学习一门技术从了解到熟悉，就像认识一个人，需要耗费大量的时间和精力，回头看才会发现自己是那么的傻呆，但是又不得不经历，Better days</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Ignite作为Spark的RDD和DataFrame很好用，这周提前三天完成了任务就开始着手继续改造Ignite，顺便练习下Scala和Spark，还有引擎下推技术。&lt;/p&gt;
-&lt;p&gt;RDD和DataFrame的区别就在于DataFrame更像是一个二维表格，在这个二维表格
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Spring ioc的本质</title>
-    <link href="lilyhuli.github.io/2019/11/21/Spring-ioc%E7%9A%84%E6%9C%AC%E8%B4%A8/"/>
-    <id>lilyhuli.github.io/2019/11/21/Spring-ioc的本质/</id>
-    <published>2019-11-20T16:02:51.000Z</published>
-    <updated>2019-11-20T16:13:49.436Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong><em>控制反转IoC(Inversion of Control)，是一种设计思想，DI(依赖注入)是实现IoC的一种方法，也有人认为DI只是IoC的另一种说法。没有IoC的程序中 , 我们使用面向对象编程 , 对象的创建与对象间的依赖关系完全硬编码在程序中，对象的创建由程序自己控制，控制反转后将对象的创建转移给第三方，个人认为所谓控制反转就是：获得依赖对象的方式反转了。</em></strong></p><p>Spring容器在初始化时先读取配置文件，根据配置文件或元数据创建与组织对象存入容器中，程序使用时再从Ioc容器中取出需要的对象。</p><p><img src="https://docs.spring.io/spring/docs/5.2.1.RELEASE/spring-framework-reference/images/container-magic.png" alt="avatar"></p><p>IoC是Spring框架的核心内容，使用多种方式完美的实现了IoC，可以使用XML配置，也可以使用注解，新版本的Spring也可以零配置实现IoC。采用XML方式配置Bean的时候，Bean的定义信息是和实现分离的，而采用注解的方式可以把两者合为一体，Bean的定义信息直接以注解的形式定义在实现类中，从而达到了零配置的目的。<br>控制反转是一种通过描述（XML或注解）并通过第三方去生产或获取特定对象的方式。在Spring中实现控制反转的是IoC容器，其实现方法是依赖注入（Dependency Injection,DI）。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;&lt;em&gt;控制反转IoC(Inversion of Control)，是一种设计思想，DI(依赖注入)是实现IoC的一种方法，也有人认为DI只是IoC的另一种说法。没有IoC的程序中 , 我们使用面向对象编程 , 对象的创建与对象间的依赖关系完全硬编码在程序中
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>杨涟血书</title>
-    <link href="lilyhuli.github.io/2019/11/12/%E6%9D%A8%E6%B6%9F/"/>
-    <id>lilyhuli.github.io/2019/11/12/杨涟/</id>
-    <published>2019-11-12T15:06:53.000Z</published>
-    <updated>2019-11-12T15:26:14.853Z</updated>
-    
-    <content type="html"><![CDATA[<pre><code class="涟今死杖下矣，痴心报主，愚直仇人，久拼七尺，不复挂念。不为张俭逃亡，亦不为杨震仰药。欲以性命归之朝廷，不图妻子一环泣耳。">打问之时，枉处赃私，杀人献媚，五日一比，限限严旨。家倾路远，交绝途穷。身非铁石，有命而已。雷霆雨露，莫非天恩？仁义一生，死于诏狱，难言不得死所，何憾于天？何怨于人？惟我身副宪臣，曾受顾命，孔子云：“托孤寄命，临大节而不可夺。”持此一念，终可以见先帝于在天，对二祖十宗于皇天后土，天下万世矣。大笑，大笑，还大笑，刀砍春风，于我何有哉？</code></pre><p>&emsp;&emsp;最近看《明朝那点事儿》，看到东林六君子之一的杨涟，太震撼了。吾生一世，活着到底为了什么，你的立场，你的信念。以下为引用原书。</p><p>&emsp;&emsp;拷打如期进行，拷打规律是每五天一次，打到不能打为止，杨涟的下颌脱落，牙齿打掉，却依旧无一字供词。 于是许显纯用上了钢刷，几次下来，杨涟体无完肤，史料有云：“皮肉碎裂如丝”。 然“骂不绝口”，死不低头。</p><p>&emsp;&emsp;在一次严酷的拷打后，杨涟回到监房，写下《告岳武穆疏》。 在这封文书中，杨涟没有无助的报怨，也没有愤怒的咒骂，他说： “此行定知不测，自受已是甘心。” 他说：“涟一身一家其何足道，而国家大体大势所伤实多。”</p><p>&emsp;&emsp;昏暗的牢房中，惨无人道的迫害，无法形容的痛苦，死亡边缘的挣扎，却没有仇恨，没有愤懑。 只有坦然、从容，以天下为己任。 在无数次的尝试失败后，许显纯终于认识到，要让这个人低头认罪，是绝不可能的。栽赃不管用的时候，暗杀就上场了。</p><p>&emsp;&emsp;魏忠贤很清楚，杨涟是极为可怕的对手，是绝对不能放走的。无论如何，必须将他杀死，且不可走漏风声。 许显纯接到了指令，他信心十足地表示，杨涟将死在他的监狱里，悄无声息，他的冤屈和酷刑将永无人知晓。事实确实如此，朝廷内外只知道杨涟有经济问题，被弄进去了，所谓拷打、折磨，闻所未闻。 </p><p>&emsp;&emsp;对于这一点，杨涟自己也很清楚，他可以死，但不想死得不明不白。 于是，在暗无天日的监房中，杨涟用被打得几近残废的手，颤抖地写下了两千字的绝笔遗书。在遗书中，他写下了事情的真相，以及自己坎坷的一生。</p><p>&emsp;&emsp;遗书写完了，却没用，因为送不出去。为保证杨涟死得不清不楚，许显纯加派人手，经常检查杨涟的牢房，如无意外，这封绝笔最终会落入许显纯手中，成为灶台的燃料。 于是，杨涟将这封绝笔交给了同批入狱的东林党人顾大章。 顾大章接受了，但他也没办法，因为他是东林重犯，如果杨涟被杀，他必难逃一死。且此封绝笔太过重要，如若窝藏必是重犯，推来推去，谁都不敢收。更麻烦的是，看守查狱的时候，发现了这封绝笔，顾大章已别无选择。他面对监狱的看守，坦然告诉他所有的一切，然后从容等待结局。短暂的沉寂后，他看见那位看守面无表情地收起绝笔，平静地告诉他：这封绝笔，绝不会落到魏忠贤的手中。这封绝笔开始被藏在牢中关帝像的后面，此后被埋在牢房的的墙角下，杨涟被杀后，那位看守将其取出，并最终公告于天下。无论何时何地，正义终究是存在的。 </p><p>&emsp;&emsp;天启五年（1625年）七月，许显纯开始了谋杀。不能留下证据，所以不能刀砍，不能剑刺，不能有明显的皮外伤。于是许显纯用铜锤砸杨涟的胸膛，几乎砸断了他的所有肋骨。然而杨涟没有死。他随即用上了监狱里最著名的杀人技巧——布袋压身。所谓布袋压身，是监狱里杀人的不二法门，专门用来处理那些不好杀，却又不能不杀的犯人，具体操作程序是，找到一只布袋，里面装满土，晚上趁犯人睡觉时压在他身上，按照清代桐城派著名学者方苞的说法（当年曾经蹲过黑牢），基本上是晚上压住，天亮就死，品质有保障。然而杨涟还是没死，每晚在他身上压布袋，就当是盖被子，白天拍土又站起来。口供问不出来倒也罢了，居然连人都干不掉，许显纯快疯了。于是这个疯狂的人，使用了丧心病狂的手段。他派人把铁钉钉入了杨涟的耳朵。具体的操作方法，我不知道，我只知道，这不是人能干出来的事情。  </p><p>&emsp;&emsp;铁钉入耳的杨涟依然没有死，但例外不会再发生了，毫无人性的折磨、耳内的铁钉已经重创了杨涟，他的神智开始模糊。杨涟知道，自己活不了多久了，于是他咬破手指，对这个世界，写下了最后的血书。 此时的杨涟已处于濒死状态，没有力气将血书交给顾大章，在那个寂静无声的黑夜里，凭借着顽强的意志，他拖着伤残的身体，用颤抖的双手，将血书藏在了枕头里。结束吧，杨涟微笑着，等待着最后的结局。许显纯来了，用人间的言语来形容他的卑劣与无耻，已经力不从心了。 看着眼前这个有着顽强信念和坚韧生命力的人，许显纯真的害怕了，敲碎他全身的肋骨，他没有死，用土袋压，他没有死，用钉子钉进耳朵，也没有死。无比恐惧的许显纯决定，使用最后也是最残忍的一招。 </p><p>&emsp;&emsp;天启五年（1625年）七月二十四日夜。许显纯把一根大铁钉，钉入了杨涟的头顶。这一次，奇迹没有再次出现，杨涟当场死亡，年五十四。伟大的殉道者，就此走完了他光辉的一生。杨涟希望，他的血书能够在他死后清理遗物时，被亲属发现。 然而这注定是个破灭的梦想，因为这一点，魏忠贤也想到了。为消灭证据，他下令对杨涟的所有遗物进行仔细检查，绝不能遗漏。很明显，杨涟藏得不好，在检查中，一位看守轻易地发现了这封血书。他十分高兴，打算把血书拿去请赏。但当他看完这封血迹斑斑的遗言后，便改变了主意。他藏起了血书，把它带回了家，他的妻子知道后，非常恐慌，让他交出去。牢头并不理会，只是紧握着那份血书，一边痛哭，一边重复着这样一句话：“我要留着它，将来，它会赎清我的罪过。” </p><p>&emsp;&emsp;三年后，当真相大白时，他拿出了这份血书，昭示天下：<strong>“仁义一生，死于诏狱，难言不得死所，何憾于天，何怨于人？唯我身副宪臣，曾受顾命，孔子云：托孤寄命，临大节而不可夺。持此一念终可见先帝于在天，对二祖十宗于皇天后土，天下万世矣！大笑大笑还大笑，刀砍东风，于我何有哉”</strong></p><p>&emsp;&emsp;他不知道自己还能活多久，不知道死后何人知晓，不知道能否平反，也不知道这份血书能否被人看见。毫无指望，只有彻底的孤独和无助。这就是阴森恐怖的牢房里，肋骨尽碎的杨涟，在最为绝望的时刻，写下的文字，每一个字，都闪烁着希望和光芒。拷打、折磨，毫无人性的酷刑，制服了他的身体，却没有征服他的意志。无论何时，他都坚持着自己的信念，那个他写在绝笔中的信念，那个崇高、光辉、唯一的信念：<strong>涟即身无完骨，尸供蛆蚁，原所甘心。但愿国家强固，圣德刚明，海内长享太平之福。此痴愚念头，至死不改</strong></p><p>&emsp;&emsp;<strong>有人曾质问我，遍读史书如你，所见皆为帝王将相之家谱，有何意义？千年之下，可有一人，不求家财万贯，不求出将入相，不求青史留名，唯以天下、以国家、以百姓为任，甘受屈辱，甘受折磨，视死如归？我答：曾有一人，不求钱财，不求富贵，不求青史留名，有慨然雄浑之气，万刃加身不改之志。杨涟，千年之下，终究不朽！</strong></p><p>&emsp;&emsp;几年来，杨涟一直在看。他看见那个无恶不作的太监，抢走了朋友的情人，杀死了朋友，坑死了上司，却掌握了天下的大权，无需偿命，没有报应。那个叫天理的东西，似乎并不存在。他看见，一个无比强大的敌人，已经出现在自己的面前。在明代历史上，从来不缺重量级的坏人，比如刘瑾，比如严嵩，但刘瑾多少还读点书，知道做事要守规矩，至少有个底线，所以他明知李东阳和他作对，也没动手杀人。严嵩虽说杀了夏言，至少还善待自己的老婆。而魏忠贤，是一个文盲，逼走老婆，卖掉女儿，他没原则，没底线，阴险狡诈，不择手段，已达到了无耻无极限的境界。他绝了后，也空了前。当杨涟回过神来，他才发现，自己身边，已是空无一人，那些当年的敌人、甚至朋友、同僚都已抛弃良知，投入了这个人的怀抱。在利益的面前，良知实在太过脆弱。但他依然留在原地，一动不动，因为他依然坚持着一样东西——道统。</p><p>&emsp;&emsp;所谓道统，是一种规则，一种秩序，是这个国家几千年来历经苦难挫折依旧前行的动力。杨涟和道统已经认识很多年了。小时候，道统告诉他，你要努力读书，研习圣人之道，将来报效国家。当知县时，道统告诉他，你要为官清廉，不能贪污，不能拿不该拿的钱，要造福百姓。京城，皇帝病危，野心家蠢蠢欲动，道统告诉他，国家危亡，你要挺身而出，即使你没有义务，没有帮手。一直以来，杨涟对道统的话都深信不疑，他照做了，并获得了成功：是你让我相信，一个普通的平民子弟，也能够通过自己的努力，坚持不懈，成就一番事业，成为千古留名的人物。你让我相信，即使身居高位，尊容加身，也不应滥用自己的权力，去欺凌那些依旧弱小的人。你让我相信，一个人活在这世上，不能只是为了自己。他应该清正廉洁，严于律己，坚守那条无数先贤走过的道路，继续走下去。但是现在，我有一个疑问：魏忠贤是一个不信道统的人，他无恶不作，肆无忌惮，没有任何原则，但他依然成为了胜利者，越来越多的人放弃了道统，投奔了他，只是因为他封官给钱，如同送白菜。我的朋友越来越少，敌人越来越多，在这条道路上，我已是孤身一人。道统说：是的，这条道路很艰苦，门槛高，规矩多，清廉自律，家徒四壁，还要立志为民请命，一生报效国家，实在太难。</p><p>&emsp;&emsp;那我为何还要继续走下去呢？因为这是一条正确的道路，几千年来，一直有人走在这条孤独的道路上，无论经过多少折磨，他们始终相信规则，相信每个人都有着自己的尊严和价值，相信这个世界上，存在着公理与正义，相信千年之下，正气必定长存。</p><p>&emsp;&emsp;是的，我明白了，现在轮到我了，我会坚守我的信念，我将对抗那个强大的敌人，战斗至最后一息，即使孤身一人。</p><p>&emsp;&emsp;<strong>好吧，杨涟，现在我来问你，最后一个问题：</strong></p><p>&emsp;&emsp;<strong>为了你的道统，牺牲你的一切，可以吗？</strong></p><p>&emsp;&emsp;<strong>可以。</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;pre&gt;&lt;code class=&quot;涟今死杖下矣，痴心报主，愚直仇人，久拼七尺，不复挂念。不为张俭逃亡，亦不为杨震仰药。欲以性命归之朝廷，不图妻子一环泣耳。&quot;&gt;
-打问之时，枉处赃私，杀人献媚，五日一比，限限严旨。家倾路远，交绝途穷。身非铁石，有命而已。
-
-雷霆雨露，莫非天恩？仁义
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Spark Sql 篇1</title>
-    <link href="lilyhuli.github.io/2019/10/30/hello/"/>
-    <id>lilyhuli.github.io/2019/10/30/hello/</id>
-    <published>2019-10-30T15:26:27.000Z</published>
-    <updated>2019-10-30T16:46:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="1-SparkSQL-概述"><a href="#1-SparkSQL-概述" class="headerlink" title="1 SparkSQL 概述"></a>1 SparkSQL 概述</h3><p>本章节测试代码已提交至：<a href="https://github.com/lilyhuli/spark" target="_blank" rel="noopener">https://github.com/lilyhuli/spark</a></p><h4 id="1-1-什么是Spark-SQL"><a href="#1-1-什么是Spark-SQL" class="headerlink" title="1.1    什么是Spark SQL"></a>1.1    什么是Spark SQL</h4><p>&ensp;&ensp;&ensp;&ensp;Spark SQL 是Spark用来处理结构化数据的一个模块，它提供了2个编程抽象 DataFrame 和 DataSet，并且作为分布式SQL查询引擎的作用。</p><h4 id="1-2-Spark-SQL的特点"><a href="#1-2-Spark-SQL的特点" class="headerlink" title="1.2    Spark SQL的特点"></a>1.2    Spark SQL的特点</h4><p>1易整合  2统一的数据访问方式  3兼容Hive  4标准的数据连接</p><h4 id="1-3-什么是DataFrame"><a href="#1-3-什么是DataFrame" class="headerlink" title="1.3    什么是DataFrame"></a>1.3    什么是DataFrame</h4><p>&ensp;&ensp;&ensp;&ensp;与RDD类似，DataFrame也是一个分布式数据容器。然而DataFrame更像传统数据库的二维表格，除了数据以外，还记录数据的结构信息，即schema。同时，与Hive类似，DataFrame也支持嵌套数据类型（struct、array和map）。从API易用性的角度上看，DataFrame API提供的是一套高层的关系操作，比函数式的RDD API要更加友好，门槛更低。</p><p><img src="https://github.com/lilyhuli/spark/raw/master/file/rddAndDataFrame.png" alt="avatar"></p><p>上图直观地体现了DataFrame和RDD的区别。左侧的RDD[Person]虽然以Person为类型参数，但Spark框架本身不了解Person类的内部结构。而右侧的DataFrame却提供了详细的结构信息，使得Spark SQL可以清楚地知道该数据集中包含哪些列，每列的名称和类型各是什么。DataFrame是为数据提供了Schema的视图。可以把它当做数据库中的一张表来对待，DataFrame也是懒执行的。性能上比RDD要高，主要原因：<br>优化的执行计划：查询计划通过Spark catalyst optimiser进行优化。</p><p><img src="https://github.com/lilyhuli/spark/raw/master/file/catalyst.png" alt="avatar"></p><p><img src="https://github.com/lilyhuli/spark/raw/master/file/eg.png" alt="avatar"></p><p><img src="https://github.com/lilyhuli/spark/raw/master/file/eg1.png" alt="avatar"></p><p> 为了说明查询优化，我们来看上图展示的人口数据分析的示例。图中构造了两个DataFrame，将它们join之后又做了一次filter操作。如果原封不动地执行这个执行计划，最终的执行效率是不高的。因为join是一个代价较大的操作，也可能会产生一个较大的数据集。如果我们能将filter下推到 join下方，先对DataFrame进行过滤，再join过滤后的较小的结果集，便可以有效缩短执行时间。而Spark SQL的查询优化器正是这样做的。简而言之，逻辑查询计划优化就是一个利用基于关系代数的等价变换，将高成本的操作替换为低成本操作的过程。</p><h4 id="1-4-什么是DataSet"><a href="#1-4-什么是DataSet" class="headerlink" title="1.4    什么是DataSet"></a>1.4    什么是DataSet</h4><p>1）是Dataframe API的一个扩展，是Spark最新的数据抽象。<br>2）用户友好的API风格，既具有类型安全检查也具有Dataframe的查询优化特性。<br>3）Dataset支持编解码器，当需要访问非堆上的数据时可以避免反序列化整个对象，提高了效率。<br>4）样例类被用来在Dataset中定义数据的结构信息，样例类中每个属性的名称直接映射到DataSet中的字段名称。<br>5） Dataframe是Dataset的特列，DataFrame=Dataset[Row] ，所以可以通过as方法将Dataframe转换为Dataset。    Row是一个类型，跟Car、Person这些的类型一样，所有的表结构信息我都用Row来表示。<br>6）DataSet是强类型的。比如可以有Dataset[Car]，Dataset[Person].<br>7）DataFrame只是知道字段，但是不知道字段的类型，所以在执行这些操作的时候是没办法在编译的时候检查是否类型失败的，比如你可以对一个String进行减法操作，在执行的时候才报错，而DataSet不仅仅知道字段，而且知道字段类型，所以有更严格的错误检查。就跟JSON对象和类对象之间的类比。  </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;1-SparkSQL-概述&quot;&gt;&lt;a href=&quot;#1-SparkSQL-概述&quot; class=&quot;headerlink&quot; title=&quot;1 SparkSQL 概述&quot;&gt;&lt;/a&gt;1 SparkSQL 概述&lt;/h3&gt;&lt;p&gt;本章节测试代码已提交至：&lt;a href=&quot;https
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>HashMap 与 concurrentHashMap</title>
@@ -163,29 +31,6 @@
       
         &lt;p&gt; HashMap&lt;br&gt; 1.7的HashMap&lt;br&gt; &lt;img src=&quot;https://javadoop.com/blogimages/map/1.png&quot; alt=&quot;Image text&quot;&gt;&lt;/p&gt;
 &lt;p&gt; &lt;code&gt;static Entry&amp;lt;K,V&amp;gt;
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>死锁</title>
-    <link href="lilyhuli.github.io/2019/03/12/%E6%AD%BB%E9%94%81/"/>
-    <id>lilyhuli.github.io/2019/03/12/死锁/</id>
-    <published>2019-03-12T12:58:28.000Z</published>
-    <updated>2019-03-12T13:05:31.875Z</updated>
-    
-    <content type="html"><![CDATA[<p>死锁发生的必要条件<br>1：互斥条件<br>2：请求和保持条件<br>3：不剥夺条件<br>4：环路等待条件</p><p>o1sy时拿住o2<br>o2sy时拿住o1</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;死锁发生的必要条件&lt;br&gt;1：互斥条件&lt;br&gt;2：请求和保持条件&lt;br&gt;3：不剥夺条件&lt;br&gt;4：环路等待条件&lt;/p&gt;
-&lt;p&gt;o1sy时拿住o2&lt;br&gt;o2sy时拿住o1&lt;/p&gt;
-
       
     
     </summary>
@@ -216,236 +61,13 @@
   </entry>
   
   <entry>
-    <title>redis 5种数据类型</title>
-    <link href="lilyhuli.github.io/2019/03/12/redis-%E7%89%A9%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <id>lilyhuli.github.io/2019/03/12/redis-物种数据类型/</id>
-    <published>2019-03-11T17:08:52.000Z</published>
-    <updated>2019-03-11T17:10:22.607Z</updated>
-    
-    <content type="html"><![CDATA[<p>RedisTemplate基本操作</p><p>Spring Data Redis 提供了一个工具类：RedisTemplate。里面封装了对于Redis的五种数据结构的各种操作，包括：</p><ul><li>redisTemplate.opsForValue() ：操作字符串</li><li>redisTemplate.opsForHash() ：操作hash</li><li>redisTemplate.opsForList()：操作list</li><li>redisTemplate.opsForSet()：操作set</li><li>redisTemplate.opsForZSet()：操作zset</li></ul><p>其它一些通用命令，如expire，可以通过redisTemplate.xx()来直接调用</p><p>5种结构：</p><ul><li>String：等同于java中的，<code>Map&lt;String,String&gt;</code></li><li>list：等同于java中的<code>Map&lt;String,List&lt;String&gt;&gt;</code></li><li>set：等同于java中的<code>Map&lt;String,Set&lt;String&gt;&gt;</code></li><li>sort_set：可排序的set</li><li>hash：等同于java中的：<code>Map&lt;String,Map&lt;String,String&gt;&gt;</code></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;RedisTemplate基本操作&lt;/p&gt;
-&lt;p&gt;Spring Data Redis 提供了一个工具类：RedisTemplate。里面封装了对于Redis的五种数据结构的各种操作，包括：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;redisTemplate.opsForValue() ：
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>静态化</title>
-    <link href="lilyhuli.github.io/2019/03/12/%E9%9D%99%E6%80%81%E5%8C%96/"/>
-    <id>lilyhuli.github.io/2019/03/12/静态化/</id>
-    <published>2019-03-11T17:00:49.000Z</published>
-    <updated>2019-03-11T17:08:34.504Z</updated>
-    
-    <content type="html"><![CDATA[<p>静态化是指把动态生成的HTML页面变为静态内容保存，以后用户的请求到来，直接访问静态页面，不再经过服务的渲染。</p><p>而静态的HTML页面可以部署在nginx中，从而大大提高并发能力，减小tomcat压力。</p><p>目前，静态化页面都是通过模板引擎来生成，而后保存到nginx服务器来部署。常用的模板引擎比如：</p><ul><li>Freemarker</li><li>Velocity</li><li>Thymeleaf</li></ul><p>Thymeleaf除了可以把渲染结果写入Response，也可以写到本地文件，从而实现静态化。</p><p>接下来，我们修改nginx，让它对商品请求进行监听，指向本地静态页面，如果本地没找到，才进行反向代理：</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;静态化是指把动态生成的HTML页面变为静态内容保存，以后用户的请求到来，直接访问静态页面，不再经过服务的渲染。&lt;/p&gt;
-&lt;p&gt;而静态的HTML页面可以部署在nginx中，从而大大提高并发能力，减小tomcat压力。&lt;/p&gt;
-&lt;p&gt;目前，静态化页面都是通过模板引擎来生成，而后
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SPU和SKU</title>
-    <link href="lilyhuli.github.io/2019/03/12/SPU%E5%92%8CSKU/"/>
-    <id>lilyhuli.github.io/2019/03/12/SPU和SKU/</id>
-    <published>2019-03-11T16:57:57.000Z</published>
-    <updated>2019-03-11T17:00:33.455Z</updated>
-    
-    <content type="html"><![CDATA[<p>按照这个理解，SPU就是俗称的“款”；SKU就是商品的“件”。</p><p>spu 和 sku 都是属性值的集合, 举个栗子 &gt;&gt;一部 6S, 它身上有很多的属性和值. 比如 :毛重: 420.00 g产地: 中国大陆容量: 16G, 64G, 128G颜色: 银, 白, 玫瑰金你跑进苏宁顺电, 说想要一台 6S, 店员也会再继续问: 你想要什么 6S? 16G 银色? 64G 白色?每一台 6S 的毛重都是 420.00 g, 产地也都是 中国大陆. 这两个属性就属于 spu 属性.而容量和颜色, 这种会影响价格和库存的(比如 16G 与 64G 的价格不同, 16G 银色还有货, 金色卖完了)属性就是 sku 属性.spu 属性(不会影响到库存和价格的属性, 又叫关键属性) &gt;&gt;毛重: 420.00 g产地: 中国大陆sku 属性(会影响到库存和价格的属性, 又叫销售属性) &gt;&gt;容量: 16G, 64G, 128G颜色: 银, 白, 玫瑰金sku 在生成时, 会根据 属性生成 相应的 笛卡尔积.想像一下扑克牌的黑红梅方和 A-K, 扑克牌是这样的 sku 属性:牌面: A - K花色: 黑红梅方最终会生成 13 <em> 4 = 52 张牌, 上面的 6S 则会生成 3 </em> 3 = 9 个 SKU商品 : iphone 6sspu : 包含在每一部 6s 的属性集合, 与商品是一对一的关系(产地:中国, 毛重:420g…)sku : 影响价格和库存的 属性集合, 与商品是多对一的关系单品 : 同 sku. 国人的另一种叫法!~</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;按照这个理解，SPU就是俗称的“款”；SKU就是商品的“件”。&lt;/p&gt;
-&lt;p&gt;spu 和 sku 都是属性值的集合, 举个栗子 &amp;gt;&amp;gt;一部 6S, 它身上有很多的属性和值. 比如 :毛重: 420.00 g产地: 中国大陆容量: 16G, 64G, 128G颜色:
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>使用spring ResponseEntity处理http响应</title>
-    <link href="lilyhuli.github.io/2019/03/12/%E4%BD%BF%E7%94%A8spring-ResponseEntity%E5%A4%84%E7%90%86http%E5%93%8D%E5%BA%94/"/>
-    <id>lilyhuli.github.io/2019/03/12/使用spring-ResponseEntity处理http响应/</id>
-    <published>2019-03-11T16:54:34.000Z</published>
-    <updated>2019-03-11T16:56:15.494Z</updated>
-    
-    <content type="html"><![CDATA[<p>使用spring时，达到同一目的通常有很多方法，对处理http响应也是一样。本文我们学习如何通过ResponseEntity设置http相应内容、状态以及头信息。ResponseEntity<br>ResponseEntity标识整个http相应：状态码、头部信息以及相应体内容。因此我们可以使用其对http响应实现完整配置。</p><p>如果需要使用ResponseEntity，必须在请求点返回，通常在spring rest中实现。ResponseEntity是通用类型，因此可以使用任意类型作为响应体：<br>@GetMapping(“/hello”)<br>ResponseEntity<string> hello() {<br>    return new ResponseEntity&lt;&gt;(“Hello World!”, HttpStatus.OK);</string></p><p>  简单粗暴的讲</p><p>@ResponseBody可以直接返回Json结果，</p><p>@ResponseEntity不仅可以返回json结果，还可以定义返回的HttpHeaders和HttpStatus<br>}</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;使用spring时，达到同一目的通常有很多方法，对处理http响应也是一样。本文我们学习如何通过ResponseEntity设置http相应内容、状态以及头信息。ResponseEntity&lt;br&gt;ResponseEntity标识整个http相应：状态码、头部信息以及相应体
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ES 搜索</title>
-    <link href="lilyhuli.github.io/2019/03/12/ES-%E6%90%9C%E7%B4%A2/"/>
-    <id>lilyhuli.github.io/2019/03/12/ES-搜索/</id>
-    <published>2019-03-11T16:18:32.000Z</published>
-    <updated>2019-03-11T16:40:19.116Z</updated>
-    
-    <content type="html"><![CDATA[<p>es与kibana结合 在kibana中编写restful命令</p><p>索引（indices）——————————–Databases 数据库</p><p>​    类型（type）—————————–Table 数据表</p><p>​         文档（Document）—————-Row 行</p><p>​           字段（Field）——————-Columns 列 </p><p>映射是定义文档的过程，文档包含哪些字段，这些字段是否保存，是否索引，是否分词等</p><p>只有配置清楚，Elasticsearch才会帮我们进行索引库的创建（不一定）</p><ul><li><p>String类型，又分两种：</p><ul><li>text：可分词，不可参与聚合</li><li>keyword：不可分词，数据会作为完整字段进行匹配，可以参与聚合</li></ul></li><li><p>Numerical：数值类型，分两类</p><ul><li>基本数据类型：long、interger、short、byte、double、float、half_float</li><li>浮点数的高精度类型：scaled_float<ul><li>需要指定一个精度因子，比如10或100。elasticsearch会把真实值乘以这个因子后存储，取出时再还原。</li></ul></li></ul></li><li><p>Date：日期类型</p><p>elasticsearch可以对日期格式化为字符串存储，但是建议我们存储为毫秒值，存储为long，节省空间。</p><p>@Document(indexName = “item”,type = “docs”, shards = 1, replicas = 0)<br>public class Item {<br>  @Id<br>  private Long id;</p><p>  @Field(type = FieldType.Text, analyzer = “ik_max_word”)<br>  private String title; //标题</p><p>  @Field(type = FieldType.Keyword)<br>  private String category;// 分类</p><p>  @Field(type = FieldType.Keyword)<br>  private String brand; // 品牌</p><p>  @Field(type = FieldType.Double)<br>  private Double price; // 价格</p><p>  @Field(index = false, type = FieldType.Keyword)<br>  private String images; // 图片地址<br>}</p></li></ul><p>  Spring Data通过注解来声明字段的映射属性，有下面的三个注解：</p><ul><li><code>@Document</code> 作用在类，标记实体类为文档对象，一般有两个属性<ul><li>indexName：对应索引库名称</li><li>type：对应在索引库中的类型</li><li>shards：分片数量，默认5</li><li>replicas：副本数量，默认1</li></ul></li><li><code>@Id</code> 作用在成员变量，标记一个字段作为id主键</li><li><code>@Field</code> 作用在成员变量，标记为文档的字段，并指定字段映射属性：<ul><li>type：字段类型，取值是枚举：FieldType</li><li>index：是否索引，布尔类型，默认是true</li><li>store：是否存储，布尔类型，默认是false</li><li>analyzer：分词器名称</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;es与kibana结合 在kibana中编写restful命令&lt;/p&gt;
-&lt;p&gt;索引（indices）——————————–Databases 数据库&lt;/p&gt;
-&lt;p&gt;​    类型（type）—————————–Table 数据表&lt;/p&gt;
-&lt;p&gt;​         文档（Do
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>分布式锁</title>
-    <link href="lilyhuli.github.io/2019/02/28/zookeeper%E7%9A%84%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/"/>
-    <id>lilyhuli.github.io/2019/02/28/zookeeper的应用场景/</id>
-    <published>2019-02-28T12:51:23.000Z</published>
-    <updated>2019-03-11T17:08:38.571Z</updated>
-    
-    <content type="html"><![CDATA[<p>redis的redlock，是redis官方支持的一种分布式锁算法，<br>给redis</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;redis的redlock，是redis官方支持的一种分布式锁算法，&lt;br&gt;给redis&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>随记</title>
-    <link href="lilyhuli.github.io/2019/02/26/%E9%9A%8F%E8%AE%B0/"/>
-    <id>lilyhuli.github.io/2019/02/26/随记/</id>
-    <published>2019-02-25T16:53:57.000Z</published>
-    <updated>2019-03-11T16:40:43.581Z</updated>
-    
-    <content type="html"><![CDATA[<p>Rabbitmq：假设P1和C1注册了相同的Broker，Exchange和Queue。P1发送的消息最终会被C1消费。基本的通信流程大概如下所示：</p><p>P1生产消息，发送给服务器端的Exchange<br>Exchange收到消息，根据ROUTINKEY，将消息转发给匹配的Queue1<br>Queue1收到消息，将消息发送给订阅者C1<br>C1收到消息，发送ACK给队列确认收到消息<br>Queue1收到ACK，删除队列中缓存的此条消息</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Rabbitmq：假设P1和C1注册了相同的Broker，Exchange和Queue。P1发送的消息最终会被C1消费。基本的通信流程大概如下所示：&lt;/p&gt;
-&lt;p&gt;P1生产消息，发送给服务器端的Exchange&lt;br&gt;Exchange收到消息，根据ROUTINKEY，将消息
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MQ面试连环炮</title>
-    <link href="lilyhuli.github.io/2019/02/24/MQ%E9%9D%A2%E8%AF%95%E8%BF%9E%E7%8E%AF%E7%82%AE/"/>
-    <id>lilyhuli.github.io/2019/02/24/MQ面试连环炮/</id>
-    <published>2019-02-24T10:27:56.000Z</published>
-    <updated>2019-02-25T17:51:37.525Z</updated>
-    
-    <content type="html"><![CDATA[<p><font size="4" face="黑体">1、消息队列的作用？</font><br><br></p><p><font size="2">核心3点：解耦、异步、削峰<br>1.abcd系统问题 2.大量用户通过浏览器（举办了一场活动）在中午高峰期进行了大量操作，大量系统涌入系统，比如说5000/秒,系统基于mysql，大量请求涌入mysql，每秒对mysql5000次冲击基本上挂掉，因为一般的mysql2000请求就会挂了，但是高峰期过了之后到下午就是低峰期，为了保证mysql不被打死，我们采用的方案就是加入一个mq，在请求端加入mq，系统a从mq中慢慢拉取请求，过了高峰期挤压的消息，就算不加机器一个小时也能消耗完。</font><br><br></p><p><font size="4" face="黑体">2、保证消息队列的高可用？</font><br><br></p><p><font size="2">MQ的缺点很明确，加入mq会让系统变得复杂，rabbitmq的高可用方式：rabbitmq有三种模式：单机模式，普通集群模式，镜像集群模式   1.单机模式没人用，2普通集群模式，就是在多台机器上启动多台实例，每个机器启动一个。但是你创建的queue只会在一个rabbitmq上，每个实例都会同步queue的元数据。Channel 声明队列 3.集群镜像模式 把需要的队列做成镜像队列，存在于多个节点，属于rabbitmq的ha方案。其实质和普通模式不同之处在于，消息实体会主动在镜像节点间同步，而不是在consumer取数据时临时拉取。kafka的高可用性：多个broker组成，每个broker是一个节点；你创建一个topic，这个topic可以划分为多个partition，每个partition可以存在于不同的broker上，每个partition就放一部分数据。kafka 0.8以后，提供了HA机制，就是replica副本机制。每个partition的数据都会同步到吉他机器上，形成自己的多个replica副本。然后所有replica会选举一个leader出来，那么生产和消费都跟这个leader打交道，然后其他replica就是follower。</font><br><br></p><p><font size="4" face="黑体">2、保证消息队列的幂等性？</font><br><br></p><p><font size="2">业界主流的幂等性有两种操作：</font></p><p>1.唯一 ID + 指纹码 机制，利用数据库主键去重</p><p>2.利用redis的原子性去实现</p><p>kafka实际上有个offset的概念，就是每个消息写进去，都有一个offset，代表他的序号，然后consumer消费了数据之后，每隔一段时间，会把自己消费过的消息的offset提交一下，代表我已经消费过了，下次我要是重启啥的，你就让我继续从上次消费到的offset来继续消费吧。</p><p>但是凡事总有意外，比如我们之前生产经常遇到的，就是你有时候重启系统，看你怎么重启了，如果碰到点着急的，直接kill进程了，再重启。这会导致consumer有些消息处理了，但是没来得及提交offset，尴尬了。重启之后，少数消息会再次消费一次。<br>给你举个例子吧。假设你有个系统，消费一条往数据库里插入一条，要是你一个消息重复两次，你不就插入了两条，这数据不就错了？但是你要是消费到第二次的时候，自己判断一下已经消费过了，直接扔了，不就保留了一条数据？</p><p>一条数据重复出现两次，数据库里就只有一条数据，这就保证了系统的幂等性</p><p>幂等性，我通俗点说，就一个数据，或者一个请求，给你重复来多次，你得确保对应的数据是不会改变的，不能出错。<br>其实还是得结合业务来思考，我这里给几个思路：<br>（1）比如你拿个数据要写库，你先根据主键查一下，如果这数据都有了，你就别插入了，update一下好吧</p><p>（2）比如你是写redis，那没问题了，反正每次都是set，天然幂等性</p><p>（3）比如你不是上面两个场景，那做的稍微复杂一点，你需要让生产者发送每条数据的时候，里面加一个全局唯一的id，类似订单id之类的东西，然后你这里消费到了之后，先根据这个id去比如redis里查一下，之前消费过吗？如果没有消费过，你就处理，然后这个id写redis。如果消费过了，那你就别处理了，保证别重复处理相同的消息即可。<br><br></p><p><font size="4" face="黑体">3、保证消息的可靠性传输（如何处理消息丢失的问题）？</font><br></p><p><font size="2">rabbitmq 1生产者弄丢了数据<br>confirm机制 2 rabbitmq弄丢了数据,设置持久化有两个步骤，第一个是创建queue的时候将其设置为持久化的，这样就可以保证rabbitmq持久化queue的元数据，但是不会持久化queue里的数据；第二个是发送消息的时候将消息的deliveryMode设置为2，就是将消息设置为持久化的，此时rabbitmq就会将消息持久化到磁盘上去。必须要同时设置这两个持久化才行，rabbitmq哪怕是挂了，再次重启，也会从磁盘上重启恢复queue，恢复这个queue里的数据。而且持久化可以跟生产者那边的confirm机制配合起来，只有消息被持久化到磁盘之后，才会通知生产者ack了，所以哪怕是在持久化到磁盘之前，rabbitmq挂了，数据丢了，生产者收不到ack，你也是可以自己重发的。3 消费端弄丢了数据 这个时候得用rabbitmq提供的ack机制，简单来说，就是你关闭rabbitmq自动ack，可以通过一个api来调用就行，然后每次你自己代码里确保处理完的时候，再程序里ack一把。这样的话，如果你还没处理完，不就没有ack？那rabbitmq就认为你还没处理完，这个时候rabbitmq会把这个消费分配给别的consumer去处理，消息是不会丢的。kafka  kafka会自动提交offset，那么只要关闭自动提交offset，在处理完之后自己手动提交offset，就可以保证数据不会丢。但是此时确实还是会重复消费，比如你刚处理完，还没提交offset，结果自己挂了，此时肯定会重复消费一次，自己保证幂等性就好了。 kafka弄丢了数据<br>给这个topic设置replication.factor参数：这个值必须大于1，要求每个partition必须有至少2个副本</font></p><p>在kafka服务端设置min.insync.replicas参数：这个值必须大于1，这个是要求一个leader至少感知到有至少一个follower还跟自己保持联系，没掉队，这样才能确保leader挂了还有一个follower吧</p><p>在producer端设置acks=all：这个是要求每条数据，必须是写入所有replica之后，才能认为是写成功了</p><p>在producer端设置retries=MAX（很大很大很大的一个值，无限次重试的意思）：这个是要求一旦写入失败，就无限重试，卡在这里了</p><p>我们生产环境就是按照上述要求配置的，这样配置之后，至少在kafka broker端就可以保证在leader所在broker发生故障，进行leader切换时，数据不会丢失<br><br><br></p><p><font size="4" face="黑体">4、保证消息的顺序性？</font><br><br></p><p><font size="2">那如何保证消息的顺序性呢？简单简单</font></p><p>（1）rabbitmq：拆分多个queue，每个queue一个consumer，就是多一些queue而已，确实是麻烦点；或者就一个queue但是对应一个consumer，然后这个consumer内部用内存队列做排队，然后分发给底层不同的worker来处理</p><p>（2）kafka：一个topic，一个partition，一个consumer，内部单线程消费，写N个内存queue，然后N个线程分别消费一个内存queue即可<br><br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;font size=&quot;4&quot; face=&quot;黑体&quot;&gt;1、消息队列的作用？&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font size=&quot;2&quot;&gt;核心3点：解耦、异步、削峰&lt;br&gt;1.abcd系统问题 2.大量用户通过浏览器（举办了一场活动）在中午高峰期进行了大量操作，大量
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Spring 面试题总结</title>
-    <link href="lilyhuli.github.io/2019/02/16/myNewTestBlog/"/>
-    <id>lilyhuli.github.io/2019/02/16/myNewTestBlog/</id>
-    <published>2019-02-15T18:56:43.000Z</published>
-    <updated>2019-02-22T13:34:03.825Z</updated>
-    
-    <content type="html"><![CDATA[<font size="4" face="黑体">1、什么是 Spring 框架？Spring 框架有哪些主要模块？</font><br><br><br><font size="2">Spring 框架是一个为 Java 应用程序的开发提供了综合、广泛的基础性支持的 Java 平台。Spring帮助开发者解决了开发中基础性的问题，使得开发人员可以专注于应用程序的开发。Spring 框架本身亦是按照设计模式精心打造，这使得我们可以在开发环境中安心的集成 Spring 框架，不必担心 Spring 是如何在后台进行工作的。Spring 框架至今已集成了 20 多个模块。这些模块主要被分如下图所示的核心容器、数据访问/集成,、Web、AOP（面向切面编程）、工具、消息和测试模块。</font><br><br><br><font size="4" face="黑体">2、Spring 框架中都用到了哪些设计模式？</font><br><br><br><font size="2">Spring 框架中使用到了大量的设计模式，下面列举了比较有代表性的：1、代理模式—在 AOP 和 remoting 中被用的比较多。2、单例模式：在 spring 配置文件中定义的 bean 默认为单例模式。3、模板模式：用来解决代码重复的问题。比如. RestTemplate, JmsTemplate, JpaTemplate。4、委派模式：Spring 提供了 DispatcherServlet 来对请求进行分发。5、工厂模式：BeanFactory 用来创建对象的实例，贯穿于 BeanFactory / ApplicationContext接口的核心理念。6、代理模式：AOP 思想的底层实现技术，Spring 中采用 JDK Proxy 和 CgLib 类库。</font>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;font size=&quot;4&quot; face=&quot;黑体&quot;&gt;1、什么是 Spring 框架？Spring 框架有哪些主要模块？&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;Spring 框架是一个为 Java 应用程序的开发提供了综合、广泛的基础性支持的 Java 平
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>秒杀，了解一下</title>
-    <link href="lilyhuli.github.io/2019/01/18/%E7%A7%92%E6%9D%80%EF%BC%8C%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B/"/>
-    <id>lilyhuli.github.io/2019/01/18/秒杀，了解一下/</id>
-    <published>2019-01-18T14:33:45.000Z</published>
-    <updated>2019-01-18T14:35:57.058Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="秒杀"><a href="#秒杀" class="headerlink" title="秒杀"></a>秒杀</h1><p>一个关于秒杀的故事 记录学习和工作点滴</p><p>学习了redis和rabbitmq一直没有很好地应用，秒杀业务可以使用redis预减库存、消息队列异步下单逐级消减对数据库的访问；mysql最大的并发量才1000，</p><p>所以瓶颈基本都是在数据库</p><p>因为是前端菜鸟所以使用bootstrap jq 和后端的thymeleaf 中间件用rabbitmq/redis/druid；</p><p>系统支持横向拓展，集群，优化缓存 异步下单 消峰 验证码框架也是用的数学验证最大强度的防止机器人；</p><p>自己封装的jedis更易使用 使用jedisTemplate主要是spring给了cache功能，这里直接自己封装的。</p><p>未完待续。</p><p>项目地址：<a href="https://github.com/lilyhuli/miaosha" target="_blank" rel="noopener">https://github.com/lilyhuli/miaosha</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;秒杀&quot;&gt;&lt;a href=&quot;#秒杀&quot; class=&quot;headerlink&quot; title=&quot;秒杀&quot;&gt;&lt;/a&gt;秒杀&lt;/h1&gt;&lt;p&gt;一个关于秒杀的故事 记录学习和工作点滴&lt;/p&gt;
-&lt;p&gt;学习了redis和rabbitmq一直没有很好地应用，秒杀业务可以使用redis预减库
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>springsecurity整合jwt</title>
     <link href="lilyhuli.github.io/2019/01/14/springsecurity%E6%95%B4%E5%90%88jwt/"/>
     <id>lilyhuli.github.io/2019/01/14/springsecurity整合jwt/</id>
     <published>2019-01-14T14:17:54.000Z</published>
-    <updated>2019-01-14T14:18:57.976Z</updated>
+    <updated>2020-05-16T04:51:08.673Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="springsecurity-jwt"><a href="#springsecurity-jwt" class="headerlink" title="springsecurity_jwt"></a>springsecurity_jwt</h1><p>springsecurity结合jwt<br>今天写下Spring Security整合jwt的一个简单小Demo，目的是登录后实现返回token</p><p>明天整合通用树形显示和vue前端显示 现在只能通过postman简单测试</p><p>jwt存在争议，但是很容易上手，分布式场景下不能再用ck-session的组合了</p><p>经典的三表结构比昨天的demo更有工业价值，代码放在Github上了 <a href="https://github.com/lilyhuli/springsecurity_jwt/" target="_blank" rel="noopener">https://github.com/lilyhuli/springsecurity_jwt/</a> 欢迎大家star、issues</p><p>ps：郁闷的七牛云图床必须要绑定备案域名了，后来发现issues直接拖拽就能当做图床，还是不要滥用呀。</p><p><img src="https://user-images.githubusercontent.com/32732399/51117727-956ae280-1849-11e9-8693-eb8787d27935.jpg" alt="Image text"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="springsecurity-jwt"><a href="#springsecurity-jwt" class="headerlink" title="springsecurity_jwt"></a>springsecurity_jwt</h1><p>springsecurity结合jwt<br>今天写下Spring Security整合jwt的一个简单小Demo，目的是登录后实现返回token</p><p>明天整合通用树形显示和vue前端显示 现在只能通过postman简单测试</p><p>jwt存在争议，但是很容易上手，分布式场景下不能再用ck-session的组合了</p><p>经典的三表结构比昨天的demo更有价值，代码放在Github上了 <a href="https://github.com/lilyhuli/springsecurity_jwt/" target="_blank" rel="noopener">https://github.com/lilyhuli/springsecurity_jwt/</a> 欢迎大家star、issues</p><p>ps：郁闷的七牛云图床必须要绑定备案域名了，后来发现issues直接拖拽就能当做图床，还是不要滥用呀。</p><p><img src="https://user-images.githubusercontent.com/32732399/51117727-956ae280-1849-11e9-8693-eb8787d27935.jpg" alt="Image text"></p>]]></content>
     
     <summary type="html">
     
@@ -456,6 +78,77 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Security </title>
+    <link href="lilyhuli.github.io/2019/01/14/Spring-Security/"/>
+    <id>lilyhuli.github.io/2019/01/14/Spring-Security/</id>
+    <published>2019-01-13T16:34:56.000Z</published>
+    <updated>2019-01-13T16:44:31.591Z</updated>
+    
+    <content type="html"><![CDATA[<p>   趁着周末闲来无事学习了一下Spring Security，源码在 <a href></a>lilyhuli/spring_security_exam</p><p>   用到的技术：<br>   java<br>   springboot<br>   mybatis<br>   mysql<br>   后端框架thymeleaf</p><p>需求如下：<br>Security中可以在内存中建立用户，留后门设置后门账号，以及数据库的结合访问。<br>和shiro一样 不同用户拥有不同权限，访问不同网页。<br>如果用户未登录，则返回首页，如果用户已登录，但是没有权限则返回json，告知。</p><pre><code>网上的看了很多文章，Spring Security内置了三个基于投票，AccessDecisionManager实现类，它们分别是AffirmativeBased、ConsensusBased 和UnanimousBased。我觉得继承AccessDecisionManager，然后重写decide方法就可以。当然Spring Security的代码需要一点点debug才能了解其原理。搞完又过0点了，洗洗睡了，梦里啥都有。</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;   趁着周末闲来无事学习了一下Spring Security，源码在 &lt;a href&gt;&lt;/a&gt;lilyhuli/spring_security_exam&lt;/p&gt;
+&lt;p&gt;   用到的技术：&lt;br&gt;   java&lt;br&gt;   springboot&lt;br&gt;   mybatis&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>又是一年末尾</title>
+    <link href="lilyhuli.github.io/2018/12/25/%E5%8F%88%E6%98%AF%E4%B8%80%E5%B9%B4%E6%9C%AB%E5%B0%BE/"/>
+    <id>lilyhuli.github.io/2018/12/25/又是一年末尾/</id>
+    <published>2018-12-24T16:31:00.000Z</published>
+    <updated>2019-01-13T16:33:42.291Z</updated>
+    
+    <content type="html"><![CDATA[<p>这一年不仅没有完成爸妈所说的人生大事，还把工作搞得一团糟。读了几本书，看了几部剧，就想把感想和经历写下来，毕竟好多年都没写总结了。</p><p>  1，《简爱》 </p><pre><code>长大了再读《简爱》真觉得简爱是一个自怨自艾的玛丽苏，根本没有灰姑娘的容颜，也没有纯洁谦卑，外柔内刚的品质，有的只是孤傲清高，目中无人，乖戾而非可爱，敏感且自卑，自我为中心，童年的经历给了她太多不幸，当然也影响了她的决定，她本不该，出身无法决定，但能决定的一定要好好把握；而《呼啸山庄》那种坏就是要坏的彻底，悲剧就是要绑架你；</code></pre><p>  2，《东京女子图鉴》</p><pre><code>绫在干什么？同作为一个京漂，绫这么富有野心，怎么可能找到和她一样的人呢，她看不起自己的阶层，厌恶自己的出身，她并不喜欢自己，努力去除自己身上的土气，那个面对阶级凝固努力想要嫁入上层阶级的绫，真当有平配自己的伴侣在一起时，要么嫌过于平凡，要么觉得对方野心太重，要么觉得对方无聊，最后都不欢而散，她只喜欢自己高攀不起的港区男，同样港区男是不会选择她的。成熟后的人多可怕，没有感情波动，和《黑镜》里玩大数据匹配伴侣的那集很像，不过黑镜的结局都要好过图鉴了，大多数东京人在工作中挣扎着对感情的投入太有限了。不过这样才显得更真实，毕竟电视剧和小说放大了感情，让你觉得它很重要；作为职业白领，绫的结婚只是她的一个目标，日本压抑的社会关系真让人喘不过气，偶像剧是泛娱乐时代的毒品，从早到晚谈恋爱，贫女出门遇见高富帅。</code></pre><p>3， 极简生活</p><pre><code>加入极简生活小组之后，发现大多数人的极简主义就是扔扔扔，这是一种的变相的消费升级，不是极简主义。对于像我这么穷的人来说，极简主义是断舍离，减物欲。购买物品所带来的快感实在太短了，在精美的包装下它让人非常期待，一旦拆开，我就要担心它会不会又磕伤划痕，变旧过时，这样所带来的只能是重蹈覆辙，不断陷入消费主义的陷阱里，不能自拔，这就非常恐怖了；我不是一个批判家，也没有资格判断，社会的标尺太沉重，对错正邪都只是前人框定好的，没有机会去定义，没有勇气去改变，更不是为了安利极简主义的生活方式，生活方式是自己决定的，根本没有对错，只要能让自己内心充盈，关注更重要的事，不必为了琐碎浪费时间。</code></pre><p>4， 情感</p><pre><code>在我看来，爱情在只不过是一小段插曲，是日常生活中诸多事务中的一件小事，这些都是从我的斗争经历里得出的。喜欢你的人会把你的沉默寡言看成斯文乖巧，莽撞冒失也可以是可爱娇痴，甚至脾气暴躁都可以是豁达爽朗；不喜欢你的人则把关心当做打扰，沉默当成冷落，你精心准备的心思会被当做神经质。所以形容词最不靠谱，舔狗也不得house。就没有那种成熟平等的恋爱么，再炙热也不过火，再沉默也不觉得是冷漠。恐惧不期而遇的爱蔓延，那种没有回应的尴尬和苦涩。毛姆不就说： “女人可以原谅男人伤害他，但绝不能原谅男人为她做出牺牲” ，毛姆是一个仇女的人，但他这句话说的很对。《一千零一夜》里的王后会沉迷每天对她暴虐的人，但是却对爱她的国王熟视无睹；所以不要对一个不爱你的人好，只会让自己显得更廉价。</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这一年不仅没有完成爸妈所说的人生大事，还把工作搞得一团糟。读了几本书，看了几部剧，就想把感想和经历写下来，毕竟好多年都没写总结了。&lt;/p&gt;
+&lt;p&gt;  1，《简爱》 &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;长大了再读《简爱》真觉得简爱是一个自怨自艾的玛丽苏，根本没有灰姑娘的容颜，也没
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客的诞生</title>
+    <link href="lilyhuli.github.io/2017/11/10/hexo/"/>
+    <id>lilyhuli.github.io/2017/11/10/hexo/</id>
+    <published>2017-11-10T09:52:00.000Z</published>
+    <updated>2020-05-16T04:55:39.804Z</updated>
+    
+    <content type="html"><![CDATA[<p>该博客托管在github pages上，所以免去了备案等手续，域名还没有申请，暂时先用github的<br>。</p>   <p>友：市面上已经有很多现成的博客平台，为什么还要自己搭建一个？<br><br>   我：想到搭建的目的，一来是自己的拖延症越来越严重，一点点小借口都能摧毁曾经燃起的雄雄壮志，做一个独立博客，记录生活点滴，技术感悟，希望自己能成长的快些；二来作为个人营销的门面，喜欢卖弄和自我营销的我当然还建一个独立的博客，简单的博客没什么技术含量，所以才更注重内容，符合极简主义的定位。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;该博客托管在github pages上，所以免去了备案等手续，域名还没有申请，暂时先用github的&lt;br&gt;。&lt;/p&gt;
+
+
+   &lt;p&gt;友：市面上已经有很多现成的博客平台，为什么还要自己搭建一个？&lt;br&gt;&lt;br&gt;   我：想到搭建的目的，一来是自己的拖延症越来越严重，一点点
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="lilyhuli.github.io/tags/hexo/"/>
     
   </entry>
   
